@@ -1,0 +1,46 @@
+/*body*/
+body{
+	font-size: 16px;
+    color: #000000;
+    font-family: 'MicrosoftYaHei';
+}
+/*header*/
+nav.navbar.navbar-default{
+	background: url("../images1/bg-banner.png") no-repeat;
+}
+div.navbar-header{
+	height:45px;
+	margin-top: 2px
+}
+img#brand-img {
+	position:absolut;
+	left:200px;
+	width:121px;
+	height:41px;
+	margin-top: 0;
+}
+
+ul.navbar-nav#top-menu{
+	font-size:18px;
+	margin-top: 5px;
+	margin-left:25px;
+	padding-top:10px;
+	color:#FFFFFF;
+}
+
+ul.navbar-nav#top-menu:after{
+
+}
+
+div.btn-group>button{
+	margin-top: 10px;
+	height:30px;
+}
+h1#title{
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-left: 358px;
+}
+form.navbar-form{
+	margin-left: 358px;
+}
