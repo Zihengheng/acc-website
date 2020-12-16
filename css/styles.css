@@ -1,12 +1,20 @@
-/*body*/
+body*/
 body{
 	font-size: 16px;
     color: #000000;
     font-family: 'MicrosoftYaHei';
 }
+section{
+	padding-left:358px;
+	padding-right:358px;
+	width:1800px;
+}
 /*header*/
 nav.navbar.navbar-default{
+	width:1800px;
 	background: url("../images1/bg-banner.png") no-repeat;
+	padding-left:358px;
+	padding-right:358px;
 }
 div.navbar-header{
 	height:45px;
@@ -14,7 +22,6 @@ div.navbar-header{
 }
 img#brand-img {
 	position:absolut;
-	left:200px;
 	width:121px;
 	height:41px;
 	margin-top: 0;
@@ -39,8 +46,128 @@ div.btn-group>button{
 h1#title{
 	color:#FFFFFF;
 	font-weight:bold;
-	margin-left: 358px;
+	margin-left:0;
 }
 form.navbar-form{
-	margin-left: 358px;
+	margin-left:0;
 }
+/*section part*/
+div.section-title h2 span{
+	font-size:36px;
+	font-weight:bold;
+	padding:0;
+	margin-left: 24px;
+	color:#333333;
+}
+div.section-title h2{
+	width:280px;
+	position:absolute;
+	left:900px;
+	transform: translateX(-50%);
+}
+/****seciton1:industry****/
+section#industry h2 span{
+	margin-top:24px;
+}
+section#industry{
+	padding-top:34px;
+	background: url("../images1/bg-industry.png") no-repeat;
+	height:500px;
+	width:1800px;
+}
+div.sction-title h2 img{
+	width:56px;
+	height:76px;
+}
+div.industry-content{
+	padding-top: 191px;
+}
+#aman{
+	float:left;
+}
+#inbox1{
+	float:left;
+	width: 345px;
+	margin-left:65px;
+}
+#inbox2{
+	float:left;
+	width:280px;
+	margin-left:30px;
+}
+#inbox1 p{
+	margin-top: -30px;
+	font-size: 20px;
+	font-weight:bold; 
+}
+#inbox2 p{
+	margin-top: -30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/****seciton2:strategy****/
+#strategy{
+
+}
+div.str-content{
+	padding-top: 140px;
+	height:500px;
+}
+#str-box1{
+	background:url("../images1/bg-box.png") no-repeat;
+	width:391px;
+	height:329px;
+	padding:30px;
+}
+#str-box2{
+	background:url("../images1/bg-box.png") no-repeat;
+	width:391px;
+	height:329px;
+	padding:30px;
+}
+#str-box3{
+	background:url("../images1/bg-box.png") no-repeat;
+	width:391px;
+	height:329px;
+	padding:30px;
+}
+/****seciton3:risk-management****/
+div.rsk-container{
+	padding-top: 50px
+}
+div.risk-content{
+	margin-top:130px;
+	height:406px;
+}
+section#risk-management{
+	margin-top:35px;
+	padding-top: 0;
+	background: url("../images1/bg-risk.png") no-repeat;
+}
+#risk-management h2 span{
+	color:white;
+}
+div.risk-content{
+	height:406px;
+	background:url("../images1/bg-riskbox.png") no-repeat;
+	z-index:1; 
+}
+
+
+/****seciton4:improvement-management****/
+section#improvement-management{
+	padding:0;
+	border:0;
+	background: url("../images1/bg-improvement.png") no-repeat;
+	height:938px;
+}
+div.imp-container{
+	padding-top: 20px;
+}
+/****seciton5:heatmap****/
+/****seciton6:communication****/
+/****seciton7:organization-management****/
+/****seciton8:book-section****/
+/*footer part*/
