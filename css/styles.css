@@ -2,8 +2,20 @@
 body{
 	font-size: 16px;
     color: #000000;
-    font-family: 'MicrosoftYaHei';
+    font-family: 'Microsoft YaHei', "微软雅黑";
 }
+/*热词模块字体*/
+div.map-words{
+	font-family:STXihei, "华文细黑";
+	color:#2659c2;
+}
+/*新闻栏字体*/
+table.list-tb tr td a{
+	color:#333333;
+	font-size:14px;
+	text-align: left;
+}
+
 section{
 	padding-left:358px;
 	padding-right:358px;
@@ -204,7 +216,6 @@ img.click-icon{
 }
 div.bottom-menu.container-fluid > ul > li:nth-child(1) > img{
 	left:25px;
-	display: none;
 }
 
 /*section part*/
@@ -393,10 +404,6 @@ div.heat-container{
 	margin-top: 20px;
 } 
 
-div.map-words{
-	font-family: 'STXhei';
-	color:#2659c2;
-}
 /****单词布局效果****/
 div#w1{
 	position:relative;
