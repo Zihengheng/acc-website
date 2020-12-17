@@ -1,4 +1,4 @@
-body*/
+/**通用***/
 body{
 	font-size: 16px;
     color: #000000;
@@ -12,50 +12,53 @@ section{
 footer{
 	width:1800px;
 }
-/*header*/
-nav.navbar.navbar-default{
-	width:1800px;
-	background: url("../images1/bg-banner.png") no-repeat;
-	padding-left:358px;
-	padding-right:358px;
+.more-btn{
+	border:0;
+	background-color: #168bf2;
+	width:50px;
+	height: 28px;
+	color:white;
+	border-radius:30px;
+	font-size:14px; 
+	margin-top:22px;
 }
-div.navbar-header{
-	height:45px;
-	margin-top: 2px
+table.list-tb{
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+	text-align: left;
+	font-size:14px;
+	margin-top: 27px
 }
-img#brand-img {
-	position:absolut;
-	width:121px;
-	height:41px;
-	margin-top: 0;
+table.list-tb td.date{
+	text-align: right;
+	width:30%;
 }
-
-ul.navbar-nav#top-menu{
-	font-size:18px;
-	margin-top: 5px;
-	margin-left:25px;
-	padding-top:10px;
-	color:#FFFFFF;
-}
-
-ul.navbar-nav#top-menu:after{
-
-}
-
-div.btn-group>button{
-	margin-top: 10px;
+table.list-tb tr{
 	height:30px;
 }
-h1#title{
-	color:#FFFFFF;
-	font-weight:bold;
-	margin-left:0;
+ul.bullet-points{
+
 }
-form.navbar-form{
-	margin-left:0;
+ul.bullet-points li img{
+	width:14px;
+	height: 18px;
+	margin-right: 10px;
 }
-/*section part*/
-div.section-title h2 span{
+ul.bullet-points li span{
+	color:white;
+	font-size:14px;
+}
+ul.bullet-points li{
+	height: 33px;
+	width:100%;
+	margin-right:25px;
+}
+buttom#white{
+	background-color: white;
+}
+/****section title***/
+h2.center span{
 	font-size:36px;
 	font-weight:bold;
 	padding:0;
@@ -67,8 +70,145 @@ div.section-title h2{
 	position:absolute;
 	left:900px;
 	z-index:1; 
-	transform: translateX(-50%);
+	margin-left:-140px;
 }
+/*header*/
+div.top-header{
+	background-color: #0000CD;
+	padding-left: 358px;
+}
+#banner{
+	padding-left: 358px;
+}
+nav.navbar.navbar-default{
+	width:1800px;
+	border:0;
+	background: url("../images1/bg-banner.png") no-repeat;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom: 0px;
+}
+div.navbar-header{
+	height:45px;
+	margin-top: 2px
+}
+img#brand-img {
+	position:absolut;
+	width:121px;
+	height:30px;
+	margin-top:-5px;
+	padding:0px;
+}
+/****修改 top menu****/
+#top-menu > li > a{
+	color:white;
+	font-size:18px;  
+}
+#top-menu > li > a:hover{
+	color:#03e2f6;
+}
+	
+/****修改btn group****/
+div.btn-group{
+	margin-top: 0;
+	padding-top:5px;
+	margin-left: 40px;
+}
+button#navbtn-1{
+	width:75px;
+	margin-right: 9px;
+	background-color: #168bf2;
+	border:0;
+	color:white;
+}
+button#navbtn-2{
+	width:75px;
+	margin-right: 9px;
+	background-color: #168bf2;
+	border:0;
+	color:white;
+}
+button#sign-in{
+	width:50px;
+	margin-right: 9px;
+	background-color: #168bf2;
+	border:0;
+	color:white;
+}
+button#sign-up{
+	width:50px;
+	background-color: #168bf2;
+	border:0;
+	color:white;
+}
+/****修改btn group****/
+
+h1#title{
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-left:0;
+	margin-top: 55px;
+}
+/****修改 input group****/
+form.navbar-form{
+	margin-left:0;
+	margin-top: 30px;
+}
+div.input-group button{
+	width:96px;
+}
+#banner > div > form > div > input{
+	width: 280px;
+}
+button#search-btn{
+	border:0;
+	background-color: #168bf2;
+	color: white;
+}
+#banner > div > form > div > img{
+	position:relative;
+	left:-40px;
+	top:3px;
+	z-index:2; 
+	width: 21px;
+	height:23px;
+}
+
+/****修改 bottom menu****/
+div.bottom-menu > ul.nav > li> a{
+	color:white;
+	font-size:18px;  
+}
+div.bottom-menu > ul.nav > li> a:hover{
+	color:#03e2f6;
+}
+div.bottom-menu{
+	background-color:#0000CD;
+	height: 44px;
+	margin-top:120px;
+	margin-bottom:0;
+	width:100%;
+	padding-left: 358px;
+}
+div.bottom-menu.container-fluid ul{
+	width: 1200px;
+}
+div.bottom-menu.container-fluid  ul li{
+	display:table-cell;
+	width: 170px;
+}
+img.click-icon{
+	position:absolute;
+	top:38px;
+	left:40px;
+}
+div.bottom-menu.container-fluid > ul > li:nth-child(1) > img{
+	left:25px;
+	display: none;
+}
+
+/*section part*/
+
 /****seciton1:industry****/
 section#industry h2 span{
 	margin-top:24px;
@@ -89,55 +229,75 @@ div.industry-content{
 #aman{
 	float:left;
 }
-#inbox1{
+div#inbox1{
+	margin-left: 30px;
 	float:left;
-	width: 345px;
+	width: 360px;
 	margin-left:65px;
 }
-#inbox2{
+div#inbox2{
 	float:left;
 	width:280px;
 	margin-left:30px;
 }
-#inbox1 p{
+div#inbox1 p{
 	margin-top: -30px;
 	font-size: 20px;
 	font-weight:bold; 
 }
-#inbox2 p{
+div#inbox2 p{
 	margin-top: -30px;
 	font-size: 20px;
 	font-weight: bold;
 }
+#inbox1 > ul > li> a{
+	font-size:14px;
+	color:#333333;
+}
+#inbox2 > ul > li> a{
+	font-size:14px;
+	color:#333333;
+}
+#inbox1 > ul > li{
+	margin:0;
+	padding:0;
+	width:90px;
+}
 
-
+#inbox1 > ul > li> a:hover{
+	color:#03e2f6;
+}
+#inbox2 > ul > li> a:hover{
+	color:#03e2f6;
+}
+#inbox2 > ul > li> a{
+	height:40px;
+}
 /****seciton2:strategy****/
-#strategy{
-
+section#strategy{
+	height: 450px;
 }
 div.str-content{
 	padding-top: 140px;
 	height:500px;
 }
-#str-box1{
-	background:url("../images1/bg-box.png") no-repeat;
-	width:391px;
-	height:329px;
-	padding:30px;
+div.str-sub-title{
+	font-size:20px;
+	font-weight:bold;  
 }
-#str-box2{
+div.str-box{
 	background:url("../images1/bg-box.png") no-repeat;
 	width:391px;
 	height:329px;
-	padding:30px;
+	padding-top:42px;
+	padding-left: 22px;
+	padding-right: 22px;
 }
-#str-box3{
-	background:url("../images1/bg-box.png") no-repeat;
-	width:391px;
-	height:329px;
-	padding:30px;
 }
 /****seciton3:risk-management****/
+section#risk-management{
+	height: 500px;
+}
 div.rsk-container{
 	padding-top: 50px
 }
@@ -147,18 +307,44 @@ div.risk-content{
 }
 section#risk-management{
 	margin-top:35px;
-	padding-top: 0;
+	padding-top: 20px;
 	background: url("../images1/bg-risk.png") no-repeat;
 }
 #risk-management h2 span{
 	color:white;
 }
+#rsk-title  ul  li  a{
+	font-size: 20px
+	color:black;
+}
 div.risk-content{
 	height:406px;
+	padding-top: 25px;
 	background:url("../images1/bg-riskbox.png") no-repeat;
 	z-index:1; 
 }
-
+div#rsk-body{
+	position: absolute;
+	margin-top: 80px;
+	padding-top: 50px;
+	padding-left: 22px;
+	width: 60%;
+	display:table;
+}
+div.bullet-list{
+	display: table-cell;
+}
+#rsk-title > ul > li> a{
+	color:#333333;
+	font-size: 18px;
+	font-weight: bold;
+}
+#rsk-title > ul > li:nth-child(1) > a{
+	width:212px;
+}
+#rsk-title > ul > li:nth-child(2) > a{
+	width: 170px;
+}
 
 /****seciton4:improvement-management****/
 section#improvement-management{
@@ -189,22 +375,88 @@ div.imp-container{
 #imp-layout div.row{
 	margin-top:41px;
 }
+div.imp-subtitle{
+	font-size:20px;
+	font-weight:bold; 
+}
 /****seciton5:heatmap****/
 section#heat-map{
-	background: url("../images1/10-bgheat.png") no-repeat;
-	height:650px;
+	background:url("../images1/bg-heatmap.png") no-repeat;
+	margin-top: 10px;
+	position:static;
 }
-
 div.heat-container{
-	padding-top: 30px;
+	width:100%;
+	height: 700px;
 }
-div.map img{
-	margin-top:20px;
-	width:1800px;
-	position:absolute;
-	left:0;
-	z-index:0;  
-	height:650px;
+#heat-map > div > div.section-title{
+	margin-top: 20px;
+} 
+
+div.map-words{
+	font-family: 'STXhei';
+	color:#2659c2;
+}
+/****单词布局效果****/
+div#w1{
+	position:relative;
+	top:307px;
+	left:212px;
+	font-size: 27px;
+}
+div#w2{
+	position:relative;
+	top:407px;
+	left:0px;
+	font-size: 33px;
+}
+div#w3{
+	position:relative;
+	top:408px;
+	left:312px;
+	font-size: 36px;
+}
+div#w4{
+	position:relative;
+	top:220px;
+	left:400px;
+	font-size: 41px;
+}
+div#w5{
+	position:relative;
+	top:100px;
+	left:600px;
+	font-size: 27px;
+}
+div#w6{
+	position:relative;
+	top:300px;
+	left:600px;
+	font-size:27px;
+}
+div#w7{
+	position:relative;
+	top:-20px;
+	left:800px;
+	font-size: 33px;
+}
+div#w8{
+	position:relative;
+	top:50px;
+	left:980px;
+	font-size: 33px;
+}
+div#w9{
+	position:relative;
+	top:100px;
+	left:820px;
+	font-size: 33px;
+}
+div#w10{
+	position:relative;
+	top:100px;
+	left:1050px;
+	font-size: 37px;
 }
 /****seciton6:communication****/
 section#communication{
@@ -217,7 +469,8 @@ div.com-content{
 	padding-top: 120px;
 }
 table#com-layout{
-	width:100%;
+	width:1200px;
+	margin-top: 60px;
 }
 table#com-layout  img{
 	width:107px;
@@ -228,8 +481,8 @@ table#com-layout  img{
 table#com-layout #com-box{
 	margin-bottom: 30px;
 	padding:7px;
-	margin-left:10px;
-	margin-right:10px;
+	margin-left:0;
+	margin-right:0;
 	width:121px;
 	background: linear-gradient(
         to bottom,
@@ -295,15 +548,181 @@ table#com-layout #com-box{
         transparent 100%
       )
       right bottom no-repeat;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
+}
+div#com-box{
+	position:relative;
+}
+div#com-box span{
+	position:absolute;
+	top:118px;
+	font-size:12px;
+	width:80px;
+	left:50%;
+	margin-left: -40px;
+	text-align: center;
+	color:#333333;
 }
 /****seciton7:organization-management****/
-#organization-management{
+section#organization-management{
 	background-color:#F8F8F8;
-	height: 833px;
+	height: 850px;
+	margin-top: 30px;
 }
 div.org-container{
-	padding-top:35px;
+	width:1200px;
+	padding-top:41px;
+}
+div.org-content{
+	width:100%;
+	margin-top: 150px;
+}
+/*设置box背景*/
+table.org-layout > tbody > tr:nth-child(1) > td.org-box1{
+	background: url("../images1/38-org.png") no-repeat;
+	height:304px;
+	padding-left: 40px;
+	width:400px;
+}
+table > tbody > tr:nth-child(1) > td.org-box2{
+	background: url("../images1/39-org.png") no-repeat;
+	padding-left: 40px;
+	width:400px;
+}
+table > tbody > tr:nth-child(1) > td.org-box3{
+	background: url("../images1/40-org.png") no-repeat;
+	padding-left: 40px;
+	width:400px;
+}
+div#org-row2{
+	width:1200px;
+}
+div#org-p4{
+	background: url("../images1/42-org.png") no-repeat;
+	height: 290px;
+	width:334px;
+	margin-right: 20px;
+}
+div.org-box5{
+	background: url("../images1/41-org.png") no-repeat;
+	width:860px;
+	height: 290px;
+	margin-left: 350px;
+	padding-top: 30px;
+	padding-left: 35px;
+}
+/******* box 子体效果********/
+td.org-box1 > p{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -30px
+}
+td.org-box2 > p{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -30px;
+}
+td.org-box3 > p{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -30px;
+}
+p.org-subtitle{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+}
+div#cl{
+	height:20px;
+}
+div#row2-cl{
+	height: 60px;
+}
+/******* button效果********/
+#white{
+	background-color: white;
+	color:#5ebbdb;
+	font-size: 12px;
+	position:relative;
+}
+td.org-box1 button#white{
+	left:-30px;
+	top:50px;
+}
+td.org-box2 button#white{
+	left:-30px;
+	top:50px;
+}
+td.org-box3 button#white{
+	left:-30px;
+	top:50px;
+}
+div.org-box5 button#white{
+	left:-30px;
+	top:-10px;
 }
 /****seciton8:book-section****/
+section#book-section{
+	height: 600px;
+}
+div.book-container{
+	padding-top: 60px
+}
+div.book-shelf{
+	position: absolute;
+	margin-top: 120px;
+	background: url("../images1/43-tab.png") no-repeat;
+	width: 1210px;
+	height: 500px;
+}
+div.book-shelf li a{
+	width: 80px;
+	margin-left: 45px;
+}
+div.show-book{
+	border: 0;
+	position:absolute;
+	margin-top: 60px;
+	width: 100%;
+	padding-left:29px;
+	padding-right:29px;
+	padding-top: 68px;
+}
+div.show-book > ul.book-list{
+	display: table;
+	width:1000px;
+	margin:0 auto;
+}
+ul.book-list li{
+	display: table-cell;
+}
+div.show-book img.btn{
+	margin-top: 30px;
+}
+div.book-shelf > ul > li > a{
+	color:#333333;
+	font-size:18px;
+}
 /*footer part*/
+footer.panel-footer{
+	margin-bottom: 0;
+	margin-top: 80px;
+	padding-left: 358px;
+	padding-right: 359px;
+	background-color:#00008B;
+}
+footer.panel-footer p{
+	color:white;
+}
+footer.panel-footer div.row{
+	padding-top: 20px;
+}
+div.row img{
+	margin-right: 30px;
+}
+section.info p{
+	text-align: left;
+}
