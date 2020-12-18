@@ -17,12 +17,14 @@ table.list-tb tr td a{
 }
 
 section{
-	padding-left:358px;
-	padding-right:358px;
-	width:1800px;
+	padding-left:10%;
+	padding-right:10%;
+	width:100%;
 }
 footer{
-	width:1800px;
+	width:100%;
+	padding-left:10%;
+	padding-right:10%;
 }
 .more-btn{
 	border:0;
@@ -69,6 +71,7 @@ ul.bullet-points li{
 buttom#white{
 	background-color: white;
 }
+
 /****section title***/
 h2.center span{
 	font-size:36px;
@@ -84,16 +87,18 @@ div.section-title h2{
 	z-index:1; 
 	margin-left:-140px;
 }
-/*header*/
+/**通用结束***/
+
+
+/********************header********************/
 div.top-header{
 	background-color: #0000CD;
-	padding-left: 358px;
+	padding-left: 10%;
 }
 #banner{
-	padding-left: 358px;
+	padding-left: 10%;
 }
 nav.navbar.navbar-default{
-	width:1800px;
 	border:0;
 	background: url("../images1/bg-banner.png") no-repeat;
 	padding-left:0px;
@@ -217,8 +222,8 @@ img.click-icon{
 div.bottom-menu.container-fluid > ul > li:nth-child(1) > img{
 	left:25px;
 }
-
-/*section part*/
+/******************** end of header ********************/
+/******************* section part ********************/
 
 /****seciton1:industry****/
 section#industry h2 span{
