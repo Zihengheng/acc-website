@@ -4,6 +4,24 @@ body{
     color: #000000;
     font-family: 'Microsoft YaHei', "微软雅黑";
 }
+header{
+	position:absolute;
+	top:0px;
+}
+section{
+	padding-left:10%;
+	padding-right:10%;
+	width:100%;
+}
+div.main-content{
+	position:ablosute;
+	top:800px;
+}
+footer{
+	width:100%;
+	padding-left:10%;
+	padding-right:10%;
+}
 /*热词模块字体*/
 div.map-words{
 	font-family:STXihei, "华文细黑";
@@ -14,17 +32,6 @@ table.list-tb tr td a{
 	color:#333333;
 	font-size:14px;
 	text-align: left;
-}
-
-section{
-	padding-left:10%;
-	padding-right:10%;
-	width:100%;
-}
-footer{
-	width:100%;
-	padding-left:10%;
-	padding-right:10%;
 }
 .more-btn{
 	border:0;
