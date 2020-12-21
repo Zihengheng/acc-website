@@ -92,20 +92,25 @@ div.section-title span{
 
 /********************header********************/
 div#banner{
-	position:absolute;
-	top:0px;
-	width:100%;
-	height:380px;
-	background: url("../images1/bg-banner.jpg") no-repeat;
-	background-size: cover;
+	height:370px;
+	background: url("../images1/bg-banner-wrap.jpg") no-repeat;
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top:220px;
+	padding-left: 18px;
+}
+div.header-container{
+	background-color: blue;
 }
 /*******修改最上面的导航栏**********/
 div.top-header{
 	background-color:#0000CD;
 	background-size: cover;
 	width:100%;
-	height:45px;
-	margin-top:10px;
+	height:48px;
+	margin-top:0px;
 }
 div#top-bar{
 	width:1200px;
@@ -148,8 +153,8 @@ button#sign-in, button#sign-up{
 
 /******* 修改搜索框 **********/
 div.search{
-	margin-top:170px;
-	margin-left: 320px;
+	margin-top:0px;
+	margin-left:0px;
 	height:41px;
 }
 div.input-group{
@@ -177,27 +182,33 @@ div.bottom-menu{
 	background-size: cover;
 	width:100%;
 	height:44px;
-	margin-top:75px;
+	margin-top:0px;
+}
+#header-nav > div > div.bottom-menu > div{
+	height:100%;
+}
+#header-nav > div > div.bottom-menu > div > ul{
+	height:100%;
 }
 div.bottom-menu div.container{
 	width:1200px;
 	margin:0 auto;
 }
-#banner > div.bottom-menu > div > ul{
+div.bottom-menu > div > ul{
 	width:100%;
 }
 div.bottom-menu > div > ul > li{
 	width:14%;
 }
-#banner > div.bottom-menu > div > ul > li > a{
+#header-nav > div > div.bottom-menu > div > ul > li > a{
 	color:white;
 	font-size:18px;
 	margin-top: -4px;
 }
-#banner > div.bottom-menu > div > ul > li > a:hover{
+#header-nav > div > div.bottom-menu > div > ul > li > a:hover{
 	color:#03e2f6;
 }
-#banner > div.bottom-menu > div > ul > li > img{
+div.bottom-menu > div > ul > li > img{
 	position:relative;
 	top:-20px;
 	left:40px;
