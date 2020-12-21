@@ -651,7 +651,7 @@ div.org-content > div.org-row{
 	height:290px;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 50px;
+	padding-top: 35px;
 	border:0;
 	position: relative;
 	left:15px;
@@ -662,6 +662,24 @@ div.org-subtitle{
 	font-size:20px;
 	text-align: left;
 	width:100%;
+}
+#org-box5 > div.org-tabs{
+	margin-top:15px;
+}
+/*nav list set up*/
+#org-box5 > div.org-lists{
+	padding-top: 20px;
+}
+#org1{
+	height:120px;
+	display: table;
+}
+div.org-col1{
+	display: table-cell;
+	padding-right: 20px;
+}
+div.org-col2{
+	display: table-cell;
 }
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
