@@ -223,6 +223,7 @@ section#industry{
 	background-size: cover;
 	height:459px;
 	padding-top:34px;
+	margin-top: -350px;
 }
 div.ins-container{
 	width:100%;
