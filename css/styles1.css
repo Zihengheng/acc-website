@@ -701,6 +701,30 @@ div.org-lists{
 	height:210px;
 	padding-top: 40px;
 }
+/*书本陈列 set up*/
+div.book-shelf > div.book-subtitle{
+	padding-left: 29px;
+}
+div.book-shelf > div.book-subtitle li{
+	width:100px;
+	margin-right: 20px;
+}
+#show-book{
+	padding-top: 68px;
+	display:table;
+	width:100%;
+}
+#show-book> div >img.btn{
+	margin-top: 30px;
+}
+ul.book-list li{
+	display:table-cell;
+	width:200px;
+}
+ul.book-list li:first-child{
+	margin-left: 20px;
+}
+
 /******* end of 财会书院 section **********/
 footer.panel-footer{
 	width:100%;
