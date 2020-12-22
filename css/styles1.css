@@ -208,11 +208,19 @@ div.bottom-menu > div > ul{
 }
 div.bottom-menu > div > ul > li{
 	width:14%;
+	line-height:40px;
+}
+div.bottom-menu > div > ul > li:hover{
+	background: url("../images1/menu.png") no-repeat center bottom;
+}
+div.bottom-menu > div > ul > li:active{
+	background: url("../images1/menu.png") no-repeat center bottom;
 }
 #header-nav > div > div.bottom-menu > div > ul > li > a{
 	color:white;
 	font-size:18px;
 	margin-top: -4px;
+	text-align: center;
 }
 #header-nav > div > div.bottom-menu > div > ul > li > a:hover{
 	color:#03e2f6;
@@ -221,6 +229,10 @@ div.bottom-menu > div > ul > li > img{
 	position:relative;
 	top:-20px;
 	left:40px;
+}
+#myactive a{
+	background: url("../images1/menu.png") no-repeat center bottom;
+	line-height:100%;
 }
 /******* finish 修改底部菜单栏 **********/
 /******************** end of header ********************/
@@ -232,7 +244,7 @@ section#industry{
 	height:550px;
 	padding-top:64px;
 	margin-top: -350px;
-	background: linear-gradient(white, #F0F8FF);
+	background:url("../images1/bg-industry.png") no-repeat center;
 }
 div.ins-container{
 	width:1200px;
@@ -251,26 +263,18 @@ div#inbox1{
 }
 div#inbox2{
 	padding-top:12px;
-	padding-left:15px;
-	padding-right:15px;
 	display:inline-block;
-	width:400px;
+	width:380px;
 	height:300px;
-	margin-left:25px;
-	background-color: white;
-	border-radius: 30px;
-	box-shadow: 5px 10px #DCDCDC;	
+	margin-left:25px;	
+	padding-left: 15px;
 }
 div#inbox3{
 	padding-top:12px;
-	padding-left:15px;
-	padding-right:15px;
 	float:right;
-	width:360px;
+	width:380px;
 	height:300px;
-	background-color: white;
-	border-radius: 30px;
-	box-shadow: 5px 10px #DCDCDC;
+	margin-right: 15px;
 }
 #show-img{
 	width:349px;
@@ -296,20 +300,76 @@ div.inbox-title{
 }
 div.inbox-tabs{
 	width:100%;
-	height:70px;
-	padding-top:5px;
+	padding-top: 20px;
 }
-
+#inbox2-tab{
+	height:60px;
+	padding-inline-start:15px;
+	border:0px;
+}
+#inbox3-tab{
+	height:60px;
+	padding-inline-start:15px;
+	border:0px;
+}
 #inbox2-tab > li {
-	width:90px;
+	width:25%;
+	display:inline-block;
+	height:100%;
+	text-align:center;
+}
+#inbox3-tab > li {
+	width:25%;
+	display:inline-block;
+	height:100%;
+	text-align:center;
+}
+#inbox2-tab > li a{
+	text-decoration: none;
+	line-height:70px;
+	font-size: 18px;
+	width:100%;
+	border:0px;
+}
+#inbox3-tab > li a{
+	text-decoration: none;
+	line-height:70px;
+	font-size: 18px;
+	width:100%;
+	border:0px;
 }
 #inbox2-content{
 	height:170px;
+	width:100%;
 	padding-top: 20px;
+	padding-left: 15px;
+	padding-right:15px;
 }
 #inbox3-content{
 	height:170px;
+	width:100%;
 	padding-top: 20px;
+	padding-left: 15px;
+	padding-right:15px;
+}
+/* 选中效果 */
+#inbox2-tab > li a:hover{
+	color:#168bf2;	
+}
+#inbox2-tab > li.active a{
+	color:#168bf2;	
+}
+#inbox3-tab > li a:hover{
+	color:#168bf2;	
+}
+#inbox3-tab > li.active a{
+	color:#168bf2;	
+}
+#inbox2-tab > li.active{
+	border-bottom:3px solid #168bf2;
+}
+#inbox3-tab > li.active{
+	border-bottom:3px solid #168bf2;
 }
 /******* 战略思维 section **********/
 section#strategy{
@@ -330,7 +390,7 @@ div.str-box{
 	display:table-cell;
 	background:url("../images1/bg-box.png") no-repeat;
 	width:391px;
-	height:329px;
+	height:340px;
 	padding-top:42px;
 	padding-left: 22px;
 	padding-right: 22px;
@@ -372,25 +432,46 @@ div#rsk-title{
 	padding-top: 10px;
 	padding-left: 10px;
 }
+ul#rsk-tab.nav-tabs{
+	border-bottom: 0px;
+}
 #rsk-tab > li{
 	width:150px;
-	height:70px;
+	height:60px;
+	display:inline-block;
+	text-align: center;
+	padding-top:20px;
+	border:0px;
 }
 #rsk-tab > li a{
 	font-weight: bold;
 	font-size:18px;
 	color:#333333;
+	text-decoration: none;
+	border:0px;
 }
-#rsk-tab > li a:hover,a:active{
+#rsk-tab > li a:hover{
 	color:#285ac3;
 }
-#rsk-body{
-	padding-top: 60px;
-	padding-right: 22px;
-	padding-left:22px;
+#rsk-tab > li.active a{
+	color:#285ac3;
 }
-
-
+/* content layout */
+div#rsk-body{
+	padding-top:85px;
+	padding-left: 22px;
+	padding-right: 20%;
+}
+div.rsk-left{
+	width:40%;
+	display:inline-block;
+}
+div.rsk-right{
+	width:40%;
+	display:inline-block;
+	margin-left: 25px;
+}
+/* end of content layout */
 /******* end of 风控管理 section **********/
 /******* 管理增值 section **********/
 section#improvement-management{
@@ -435,9 +516,9 @@ div.imp-boxbody{
 /******* 热点词汇 section **********/
 section#heat-container{
 	width:100%;
-	background:url("../images1/bg-heatmap.png") no-repeat;
+	background:url("../images1/bg-heatmap.png") no-repeat center bottom;
 	margin-top: 10px;
-	background-size:100% 100%;
+	background-size:cover;
 }
 div.heat-container{
 	width:1200px;
@@ -670,19 +751,20 @@ div.org-content > div.org-row{
 }
 #org-box4{
 	background: url("../images1/42-org.png") no-repeat;
-	display:table-cell;
+	float:left;
 	height:290px;
 	width:334px;
 }
 #org-box5{
 	background:url("../images1/41-org.png") no-repeat;
-	display:table-cell;
+	display:inline-block;
 	height:290px;
+	width:840px;
+	margin-left: 20px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 35px;
 	border:0;
-	position: relative;
 	left:15px;
 }
 div.org-subtitle{
@@ -699,16 +781,44 @@ div.org-subtitle{
 #org-box5 > div.org-lists{
 	padding-top: 20px;
 }
+#org-nav{
+	border-bottom: 0px;
+	height:30px;
+	padding-left: 0px;
+}
+#org-nav li{
+	display:inline-block;
+	width:80px;
+	height:43px;
+	margin-right: 32px;
+	text-align: center;
+	padding-top: 10px;
+}
+#org-nav li a{
+	height:100%;
+	text-decoration: none;
+	color:white;
+	border:0px;
+	font-size: 16px;
+}
+#org-nav > li.active > a{
+	background: none;
+	color:#0a6bd7;
+}
+#org-nav > li.active{
+	border-bottom:3px solid  #0a6bd7;
+}
 #org1{
 	height:120px;
 	display: table;
 }
+/* list content */
 div.org-col1{
-	display: table-cell;
 	padding-right: 20px;
+	float:left;
 }
 div.org-col2{
-	display: table-cell;
+	display: inline-block;
 }
 #gltz > div.org-col2 > button{
 	position:relative;
