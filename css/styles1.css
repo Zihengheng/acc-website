@@ -875,16 +875,36 @@ div.book-subtitle{
 /* show book */
 #show-book{
 	padding-top:40px;
-	width:100%;
 }
 #show-book> div >img.btn{
 	margin-top: 30px;
 }
 ul.book-list li{
 	display:inline-block;
-	width:170px;
 }
-
+#books{
+	width:1000px;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+}
+#books ul{
+	position:relative;
+	padding:0;
+	width:3000px;
+	margin:0;
+}
+#books li{
+	width:170px;
+	height:200px;
+	float:left;
+	display:inline-block;
+	margin:0;
+}
+ul.book-list li a{
+	border:none;
+	margin:0 auto;
+}
 /******* end of 财会书院 section **********/
 footer.panel-footer{
 	width:100%;

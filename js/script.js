@@ -5,20 +5,24 @@ $( document ).ready(function() {
     $('#rsk-tab a[href="#coso"]').tab('show');
     $('#org-nav a[href="#gltz"]').tab('show');
     $('#book-title a[href="#qikan"]').tab('show');
+    $('#org-nav a[href="#gltz"]').tab('show');
  
 });
 //图书轮播
 $(function(){
 
     // $.tab(".area-left", ".nav-list li", "cur", ".con-list", "active", "mousedown");
-    //新的轮播
+
+    //首页 研究机构轮播
     var videoScroll1 = new LScroll();
-    videoScroll1.dom = $("#show-book .book-list");
+    videoScroll1.dom = $("#books");
     videoScroll1.speed = 5000;
     $("img .go-left").click(function () { videoScroll1.prev(); });
     $("img .go-right").click(function () { videoScroll1.next(); });
     videoScroll1.tabmarq(0, 0, 1);
+
 });
+
 
 /*--轮播 start--*/
 var LScroll = function () {
@@ -89,7 +93,7 @@ var LScroll = function () {
         stop();
         LScroll.fn.dom.unbind("mouseenter").unbind("mouseleave");
     };
-    轮播图效果，无缝滚动 mode-0:左右，1：上下 startno-置为0，实现无缝 tabnum-每次滚动个数
+    //轮播图效果，无缝滚动 mode-0:左右，1：上下 startno-置为0，实现无缝 tabnum-每次滚动个数
     LScroll.fn.tabmarq = function (mode, startno, tabnum) {
         tabnum = tabnum == null ? 1 : tabnum;
         startno = startno == null ? 0 : startno;
