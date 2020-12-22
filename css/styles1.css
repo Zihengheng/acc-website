@@ -845,27 +845,44 @@ div.org-lists{
 	padding-top: 40px;
 }
 /*书本陈列 set up*/
-div.book-shelf > div.book-subtitle{
-	padding-left: 29px;
+div.book-subtitle{
+	height:60px;
 }
-div.book-shelf > div.book-subtitle li{
-	width:100px;
+#book-title{
+	border-bottom: 0px;
+	margin-left: -10px;
+}
+#book-title li{
+	display:inline-block;
+	width:90px;
+	text-align: center;
 	margin-right: 20px;
+	height:50px;
 }
+#book-title li a{
+	color:#333333;
+	font-size:18px;
+	text-decoration: none;
+	border:none;
+	line-height: 50px;
+}
+#book-title li.active a {
+	color:#168cd9;
+}
+#book-title li a:hover{
+	color:#168cd9;
+}
+/* show book */
 #show-book{
-	padding-top: 68px;
-	display:table;
+	padding-top:40px;
 	width:100%;
 }
 #show-book> div >img.btn{
 	margin-top: 30px;
 }
 ul.book-list li{
-	display:table-cell;
-	width:200px;
-}
-ul.book-list li:first-child{
-	margin-left: 20px;
+	display:inline-block;
+	width:170px;
 }
 
 /******* end of 财会书院 section **********/
