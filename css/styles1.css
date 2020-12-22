@@ -103,7 +103,6 @@ div.section-title span{
 /********************header********************/
 div#banner{
 	height:370px;
-	background: url("../images1/bg-banner-wrap.jpg") no-repeat;
 	width:1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -112,7 +111,7 @@ div#banner{
 	padding-left: 18px;
 }
 div.header-container{
-	background: linear-gradient(to right, #0024ab, #004cbf );
+	background: url("../images1/bg-banner.jpg") no-repeat center;
 }
 /*******修改最上面的导航栏**********/
 div.top-header{
@@ -164,7 +163,7 @@ button#sign-in, button#sign-up{
 /******* 修改搜索框 **********/
 div.search{
 	margin-top:0px;
-	margin-left:0px;
+	margin-left:-22px;
 	height:41px;
 }
 div.input-group{
