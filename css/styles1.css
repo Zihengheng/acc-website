@@ -896,21 +896,39 @@ img.go-left3,img.go-right1,img.go-right2, img.go-right3,{
 	margin-top: 30px;
 }
 div.books > ul > li{
-	display: table-cell;
-	width:150px;
+	width:162px;
+	float:left;
+	text-align: center;
 }
-ul.booklist{
+div.books ul{
+	margin-left:25px;
 }
 div.books{
-	width:1000px;
+	width:1036px;
 	top:-30px;
 	position:relative;
 	margin:0 auto;
 	height:200px;
 	overflow:hidden;
-	display:table;
 }
-
-
+/*btns*/
+img.pull-left.btn.go-left1{
+	margin-left: 29px;
+}
+img.pull-right.btn.go-right1{
+	margin-right:29px;
+}
+img.pull-left.btn.go-left2{
+	margin-left: 29px;
+}
+img.pull-right.btn.go-right2{
+	margin-right:29px;
+}
+img.pull-left.btn.go-left3{
+	margin-left: 29px;
+}
+img.pull-right.btn.go-right3{
+	margin-right:29px;
+}
 
 /******* end of 财会书院 section **********/
