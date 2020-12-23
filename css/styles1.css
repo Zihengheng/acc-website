@@ -19,7 +19,7 @@ div.footer{
 	width:100%;
 	padding-left:10%;
 	padding-right:10%;
-	background: url("../footer/foot-bg.png");
+	background: url("../footer/foot-bg.png") no-repeat;
 }
 /****列表显示***/
 table.list-tb{
@@ -491,7 +491,7 @@ div.imp-layout{
 }
 div.imp-row{
 	margin-bottom: 41px;
-	height:329px;
+	height:350px;
 	display: table;
 }
 div.imp-box{
@@ -817,9 +817,11 @@ div.org-subtitle{
 div.org-col1{
 	padding-right: 20px;
 	float:left;
+	width:380px;
 }
 div.org-col2{
 	display: inline-block;
+	width:380px;
 }
 #gltz > div.org-col2 > button{
 	position:relative;
@@ -915,6 +917,7 @@ ul.content li{
 }
 ul.content{
 	padding-top: 40px;
+	padding-left: 0px;
 }
 ul.content li b{
 	display:block;
@@ -937,3 +940,34 @@ div#divider{
 	height:200px;
 	background-color: #333333;
 }
+body > div.footer > div.foot-top.wrap > ul > li:nth-child(5){
+	margin-right: 5px;
+}
+ul.content li.img{
+	margin-right: 10px;
+	width:100px;
+}
+li.col1{
+	position:relative;
+	top:-30px;
+}
+li.col2{
+	position:relative;
+	top:-50px;
+}
+li.col3{
+	position:relative;
+	top:-30px;
+}
+li.col4{
+	position:relative;
+	top:-50px;
+}
+li.img1{
+	position:relative;
+	top:-60px;
+	height:60px;
+}
+li.img2{
+    position:relative;
+	top:-60px;
