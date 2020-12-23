@@ -15,10 +15,11 @@ div#main-content{
 	width:100%;
 	margin-top:350px;
 }
-footer{
+div.footer{
 	width:100%;
 	padding-left:10%;
 	padding-right:10%;
+	background: url("../footer/foot-bg.png");
 }
 /****列表显示***/
 table.list-tb{
@@ -882,22 +883,21 @@ div.book-subtitle{
 ul.book-list li{
 	display:inline-block;
 }
-#books{
+div.books{
 	width:1000px;
 	position:relative;
 	margin:0 auto;
 	overflow:hidden;
 }
-#books ul{
+div.books ul{
 	position:relative;
 	padding:0;
 	width:3000px;
 	margin:0;
 }
-#books li{
+div.books li{
 	width:170px;
-	height:200px;
-	float:left;
+	height:180px;
 	display:inline-block;
 	margin:0;
 }
@@ -906,26 +906,34 @@ ul.book-list li a{
 	margin:0 auto;
 }
 /******* end of 财会书院 section **********/
-footer.panel-footer{
-	width:100%;
-	margin-bottom: 0;
-	margin-top: 20px;
-	background-color:#00008B;
+/* new footer */
+ul.content li{
+	display:inline-block;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-right: 80px;
 }
-div.footer-container{
-	width:1200px;
-	margin:0 auto;
+ul.content{
+	padding-top: 40px;
 }
-footer.panel-footer p{
-	color:white;
+ul.content li b{
+	display:block;
+	color:#333333;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 0px;
 }
-footer.panel-footer div.row{
-	padding-top: 20px;
+ul.content li a{
+	display:block;
+	text-decoration: none; 
+	color:#333333;
 }
-div.row img{
-	margin-right: 30px;
+ul.content li span{
+	display:block;
 }
-section.info p{
-	text-align: left;
+div#divider{
+	float:right;
+	width:1px;
+	height:200px;
+	background-color: #333333;
 }
-
