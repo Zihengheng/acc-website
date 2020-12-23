@@ -15,12 +15,39 @@ div#main-content{
 	width:100%;
 	margin-top:350px;
 }
-div.footer{
-	width:100%;
-	padding-left:10%;
-	padding-right:10%;
-	background: url("../footer/foot-bg.png") no-repeat;
+/* 底部内容 样式s*/
+body > div.footer > div.foot-bot.clearfix.warp > div.t{
+	height:90px;
+	padding-bottom: 30px;
 }
+div.b{
+	margin-top: 20px;
+}
+.footer{width:100%;height:379px;color:#a4acb7;font-family:"Microsoft Yahei";line-height:22px;background-color:#1c2b40;font-size: 12px;}
+.footer a{color:#66758d;font-family:"Microsoft Yahei";}
+.foot-top{width:100%;height:181px;padding-top:28px;clear:both;background:url("../footer/foot-bg.png") top center #e6e9ee;    font-size: 12px;}
+.foot-top .content{width:1200px;margin:0 auto;overflow:hidden;}
+.foot-top li{float:left;}
+.foot-top li+li{margin-left:105px;}
+.foot-top b{display:block;font-size:14px;color:#54627a;line-height:44px;}
+.foot-top a,.foot-top span{display:block;color:#66758d;}
+.foot-top span a{display:inline;}
+.foot-top .weibo{width:290px;height:90px;padding-top:30px;padding-left:20px;margin-top:17px;text-align:center;border-left:1px solid #506581;}
+.foot-top .weibo a{display:inline-block;line-height:40px;}
+.foot-top .weibo a+a{margin-left:35px;}
+.foot-top .weibo img{width:40px;height:40px;background:url("../footer/weibo-bg.png") no-repeat 0 0;}.foot-top .weibo a:hover img{background-position:-40px 0;}.foot-bot{width:1140px;margin:0 auto;overflow:hidden;color:#a4acb7;}
+.foot-bot .t{height:60px;padding-top:27px;border-bottom:1px solid #2e435e;}.foot-bot .t a{color:#a4acb7;}
+.foot-bot .t>img{float:left;width:110px;}
+.foot-bot .t .mid{float:left;margin-left:20px;}
+.foot-bot .t .mid span{display:block;}
+.foot-bot .t .mid a+a{margin-left:24px;}
+.foot-bot .t .right{float:right;}
+.foot-bot .t .right img{height:32px;margin-left:17px;}
+.foot-bot .b{width:670px;padding-top:16px;}
+.foot-bot .b a{margin-left:5px;}
+.foot-bot .b a,.foot-bot .b span{color:#6a7481;white-space:nowrap;margin-right:5px;}
+.footer a:hover,.foot-top a:hover span{color:#2f8bd6;}
+/* 底部 样式end*/
 /****列表显示***/
 table.list-tb{
 	width:100%;
@@ -424,7 +451,7 @@ div.rsk-container{
 }
 #risk-management > div > div.risk-content{
 	width:100%;
-	background: url("../images1/bg-riskbox.png") no-repeat;
+	background: url("../images1/bg-rskbox.jpg") no-repeat;
 	height:406px;
 	margin-top: 20px;
 }
@@ -438,11 +465,13 @@ ul#rsk-tab.nav-tabs{
 }
 #rsk-tab > li{
 	width:150px;
-	height:60px;
+	height:72px;
 	display:inline-block;
 	text-align: center;
 	padding-top:20px;
-	border:0px;
+}
+#rsk-tab > li.active{
+	border-bottom: 5px solid #285ac3;
 }
 #rsk-tab > li a{
 	font-weight: bold;
@@ -838,9 +867,10 @@ div.book-container{
 	margin:0 auto;
 }
 div.book-shelf{
-	background: url("../images1/43-tab.png") no-repeat;
+	background: url("../images1/book-bottom.png") no-repeat;
 	height: 400px;
 	width:100%;
+	margin-top: 80px;
 }
 div.org-lists{
 	width:100%;
@@ -849,18 +879,24 @@ div.org-lists{
 }
 /*书本陈列 set up*/
 div.book-subtitle{
+	position:relative;
+	top:-45px;
 	height:60px;
+	margin-left:10px;
 }
 #book-title{
 	border-bottom: 0px;
-	margin-left: -10px;
+	margin-left: -26px;
 }
 #book-title li{
 	display:inline-block;
-	width:90px;
+	width:180px;
 	text-align: center;
-	margin-right: 20px;
+	margin-right:0px;
 	height:50px;
+}
+#book-title li.active{
+	background: url("../images1/book-up.png") no-repeat center;
 }
 #book-title li a{
 	color:#333333;
@@ -908,66 +944,3 @@ ul.book-list li a{
 	margin:0 auto;
 }
 /******* end of 财会书院 section **********/
-/* new footer */
-ul.content li{
-	display:inline-block;
-	margin-top: 0px;
-	padding-top: 0px;
-	margin-right: 80px;
-}
-ul.content{
-	padding-top: 40px;
-	padding-left: 0px;
-}
-ul.content li b{
-	display:block;
-	color:#333333;
-	font-weight: bold;
-	margin-bottom: 20px;
-	margin-top: 0px;
-}
-ul.content li a{
-	display:block;
-	text-decoration: none; 
-	color:#333333;
-}
-ul.content li span{
-	display:block;
-}
-div#divider{
-	float:right;
-	width:1px;
-	height:200px;
-	background-color: #333333;
-}
-body > div.footer > div.foot-top.wrap > ul > li:nth-child(5){
-	margin-right: 5px;
-}
-ul.content li.img{
-	margin-right: 10px;
-	width:100px;
-}
-li.col1{
-	position:relative;
-	top:-30px;
-}
-li.col2{
-	position:relative;
-	top:-50px;
-}
-li.col3{
-	position:relative;
-	top:-30px;
-}
-li.col4{
-	position:relative;
-	top:-50px;
-}
-li.img1{
-	position:relative;
-	top:-60px;
-	height:60px;
-}
-li.img2{
-    position:relative;
-	top:-60px;
