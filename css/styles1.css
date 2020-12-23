@@ -891,32 +891,26 @@ div.book-subtitle{
 #show-book{
 	padding-top:40px;
 }
-#show-book> div >img.btn{
+#show-book> img.go-left1,img.go-left2,
+img.go-left3,img.go-right1,img.go-right2, img.go-right3,{
 	margin-top: 30px;
 }
-ul.book-list li{
-	display:inline-block;
+div.books > ul > li{
+	display: table-cell;
+	width:150px;
+}
+ul.booklist{
 }
 div.books{
 	width:1000px;
+	top:-30px;
 	position:relative;
 	margin:0 auto;
+	height:200px;
 	overflow:hidden;
+	display:table;
 }
-div.books ul{
-	position:relative;
-	padding:0;
-	width:3000px;
-	margin:0;
-}
-div.books li{
-	width:170px;
-	height:180px;
-	display:inline-block;
-	margin:0;
-}
-ul.book-list li a{
-	border:none;
-	margin:0 auto;
-}
+
+
+
 /******* end of 财会书院 section **********/
