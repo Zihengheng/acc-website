@@ -8,7 +8,7 @@ div.header{
 	margin-top:0px;
 	width: 100%;
 }
-section{
+div.section{
 	width:100%;
 }
 div#main-content{
@@ -341,7 +341,7 @@ div.bottom-menu > div > ul > li > img{
 #industry > div > div.section-title.ins-title{
 	padding-top:10px;
 }
-section#industry{
+div#industry{
 	width:100%;
 	height:470px;
 	padding-top:34px;
@@ -489,7 +489,7 @@ div.inbox-tabs{
 	border-bottom:3px solid #168bf2;
 }
 /******* 战略思维 section **********/
-section#strategy{
+#strategy{
 	padding-top:35px;
 	width:100%;
 	margin-top: 0;
@@ -532,7 +532,7 @@ div.str-box table{
 }
 /******* finish 战略思维 section **********/
 /******* 风控管理 section **********/
-section#risk-management{
+#risk-management{
 	width:100%;
 	margin-top:75px;
 	padding-top:65px;
@@ -607,7 +607,7 @@ div.rsk-right{
 /* end of content layout */
 /******* end of 风控管理 section **********/
 /******* 管理增值 section **********/
-section#improvement-management{
+#improvement-management{
 	width:100%;
 	background: url("../images/bg-improvement.png") no-repeat;
 	height:938px;
@@ -668,7 +668,7 @@ div.imp-boxbody > button{
 }
 /******* end of 管理增值 section **********/
 /******* 热点词汇 section **********/
-section#heat-container{
+#heat-container{
 	width:100%;
 	background:url("../images/bg-heatmap.png") no-repeat center bottom;
 	margin-top: 10px;
@@ -687,7 +687,7 @@ div.map-words a{
 /****单词布局效果****/
 div#mw1 a{
 	position:relative;
-	top:107px;
+	top:150px;
 	left:212px;
 	width: 108px;
 	height: 26px;
@@ -700,7 +700,7 @@ div#mw1 a{
 }
 div#mw2 a{
 	position:relative;
-	top:207px;
+	top:250px;
 	left:90px;
 	width: 52px;
 	height: 25px;
@@ -713,7 +713,7 @@ div#mw2 a{
 }
 div#mw3 a{
 	position:relative;
-	top:208px;
+	top:250px;
 	left:312px;
 	width: 146px;
 	height: 36px;
@@ -727,7 +727,7 @@ div#mw3 a{
 }
 div#mw4 a{
 	position:relative;
-	top:20px;
+	top:70px;
 	left:400px;
 	width: 210px;
 	height: 41px;
@@ -741,7 +741,7 @@ div#mw4 a{
 }
 div#mw5 a{
 	position:relative;
-	top:-100px;
+	top:-50px;
 	left:600px;
 	width: 108px;
 	height: 27px;
@@ -754,7 +754,7 @@ div#mw5 a{
 }
 div#mw6 a{
 	position:relative;
-	top:100px;
+	top:150px;
 	left:600px;
 	width: 134px;
 	height: 33px;
@@ -768,7 +768,7 @@ div#mw6 a{
 }
 div#mw7 a{
 	position:relative;
-	top:-220px;
+	top:-180px;
 	left:800px;
 	width: 134px;
 	height: 33px;
@@ -782,7 +782,7 @@ div#mw7 a{
 }
 div#mw8 a{
 	position:relative;
-	top:-150px;
+	top:-100px;
 	left:980px;
 	width: 135px;
 	height: 32px;
@@ -796,7 +796,7 @@ div#mw8 a{
 }
 div#mw9 a{
 	position:relative;
-	top:-100px;
+	top:-50px;
 	left:820px;
 	width: 135px;
 	height: 32px;
@@ -810,7 +810,7 @@ div#mw9 a{
 }
 div#mw10 a{
 	position:relative;
-	top:-100px;
+	top:-50px;
 	left:1050px;
 	width: 76px;
 	height: 28px;
@@ -823,7 +823,7 @@ div#mw10 a{
 }
 /******* end of 热点词汇 section **********/
 /******* 行业交流 section **********/
-section#communication{
+#communication{
 	width:100%;
 	padding-top: 34px;
 	padding-bottom: 41px;
@@ -931,7 +931,7 @@ div#com-box span{
 }
 /******* end of 行业交流 section **********/
 /******* 组织管理 section **********/
-section#organization-management{
+#organization-management{
 	width:100%;
 	padding-top: 35px;
 	height:833px;
@@ -986,12 +986,12 @@ div.org-content > div.org-row{
 #org-box4{
 	background: url("../images/42-org.png") no-repeat;
 	float:left;
-	height:292px;
+	height:300px;
 	width:336px;
 }
 #org-box5{
 	background:url("../images/41-org.png") no-repeat;
-	height:298px;
+	height:300px;
 	width:847px;
 	margin-left: 10px;
 	padding-left: 40px;
@@ -1058,18 +1058,26 @@ div.org-col1{
 }
 div.org-col2{
 	display: inline-block;
-	width:341px;
+	width:370px;
+}
+div.org-col2 button{
+	margin-top: -5px;
+
 }
 #gltz > div.org-col2 > button{
-	position:relative;
-	top:-20px;
+	
 }
-
 div.org-lists ul li{
 	width:300px;
-	line-height: 30px;
+	line-height: 29px;
 	margin:0;
 }
+div.org-lists ul li img{
+	width: 13px;
+	height: 18px;
+	color: #fbfbfb;
+}
+
 div.org-lists ul{height:134px;}
 .org-lists button{
 	margin-top:30px;
@@ -1077,7 +1085,7 @@ div.org-lists ul{height:134px;}
 
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
-section#book-section{
+#book-section{
 	width:100%;
 	padding-top: 69px;
 }
