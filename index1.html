@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>企业财务知识服务平台</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.33, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>企业财务知识服务平台</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 	<!-- CSS styles -->
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link  type="text/css" rel="stylesheet" href="css/public-mod.css"/>
     <link  type="text/css" rel="stylesheet" href="css/xbSkin.css"/>
-	<link rel="stylesheet" href="css/styles1.css">
+	<link rel="stylesheet" href="css/mCustom.css">
 </head>
 <body>
 	<!-- 头部内容 -->
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
+	<div class="header">
+		<nav id="header-nav" class="navbar-default">
 		<div class="header-container">
 			<div class="top-header"><!-- brand and top menu -->
 					<div id="top-bar">
 						<a class="navbar-brand" href="#">
-							<img id="brand-img" src="images1/logo.png" alt="Brand" height="41px">
+							<img id="brand-img" src="images/logo.png" alt="Brand" height="41px">
 						</a>
-						<ul class="nav navbar-nav pull-left" id="top-menu">
+						<ul class="nav navbar-nav" id="top-menu">
 						<li><a href="#" target="_blank">企业党建</a></li>	
 						<li><a href="#" target="_blank">企业经营管理</a></li>	
 						<li><a href="#" target="_blank">企业财务</a></li>
@@ -30,40 +33,50 @@
 						<li><a href="#" target="_blank">企业案例</a></li>
 						<li><a href="#" target="_blank">企业大讲堂</a></li>
 						</ul>
-						<div class="btn-group top-bar-group">
-							<button class="btn btn-default" id="navbtn-1">企业管理</button>
-							<button class="btn btn-default" id="navbtn-2">申请试用</button>
-							<button class="btn btn-default" id="sign-in">登陆</button>
-							<button class="btn btn-default" id="sign-up">注册</button>
+						<div class="top-bar-group">
+							<button class="btn" id="navbtn-1">企业管理</button>
+							<button class="btn" id="navbtn-2">申请试用</button>
+							<ul class="mod-login mod-login-horizontal-s1 fr">
+                        <li id="lgarea" class="login" data-lg="outFn">
+                        <a href="javascript:;" id="login" class="login-btn-login">登录</a>
+                        <a href="javascript:$.Reg();" class="login-btn-reg">注册</a>
+                    </li>
+                </ul>
 						</div>
 					</div>
 				</div><!-- top-header -->
 			<div id="banner">		
-				<div class="search"><!-- 搜索栏目 -->
-					<form class="navbar-form navbar-left" id="search-by-theme">
-					<!-- 组合搜索 -->
-					<div class="input-group">
-				      <div class="input-group-btn">
-				        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">主题<span class="caret"></span></button>
-				        <ul class="dropdown-menu">
-				          <li><a href="#">主题1</a></li>
-				          <li><a href="#">主题2</a></li>
-				          <li><a href="#">主题3</a></li>
-				          <li role="separator" class="divider"></li>
-				          <li><a href="#">主题4</a></li>
-				        </ul>
-				      </div><!-- /btn-group -->
-				      <input type="text" class="form-control" aria-label="...">
-				    </div><!-- /input-group -->
-				    <button type="submit" class="btn btn-default" id="search-btn">高级检索</button>
-				    <!-- 表单提交 -->
-					</form>
-				</div><!-- 搜索栏目结束 -->
+				<!-- search bar -->
+				<div class="search-box clearfix">
+                <div class="search-box-l fl">
+                <div class="mod-search mod-search-singlebox-s2" data-code="SQJE">
+                        <div id="keylist" class="keylist">
+                            <span class="active">主题<i></i></span>
+                            <ul class="list">
+                                <li class="current" data-rel="0" data-code="SQJE">主题</li>
+                                <li data-rel="2" data-code="SQJJ">姓名</li>
+                                <li data-rel="1" data-code="SQJE">单位</li>
+                            </ul>
+                        </div>
+                        <div class="secx ">
+                            <label class="pholder" for="searchtext1"> 请输入关键词...</label>
+                            <input id="searchtext1" class="inputtext" autocomplete="off" type="text" name="textfiled"
+                                maxlength="100">
+                                <!-- <input class="secbtn" type="button" value="查询"> -->
+                            <img src="images/search.png" class="secbtn" type="button" value="查询">
+                            <input id="searchtexthid" type="hidden" name="searchtexthid">
+                        </div>
+                    </div>
+                </div>
+                <!-- 主题的高级检索 -->
+                <a class="search-g-link fl" href="//hydev.cnki.net/KNS/brief/result.aspx?dbprefix=SQJJ" target="_blank" data-uid="no">高级查询</a>
+            </div>
+				<!-- end of search bar -->
 
 			</div><!-- end of banner -->
 			<!-- 底部菜单栏 -->
 				<div class="bottom-menu">
-					<div class="container">
+					<div class="bm-container">
 				    <ul class="nav navbar-nav">
 					<li class="active" id="myactive"><a href="#">首页</a></li>	
 					<li><a href="//hydev.cnki.net/kweb/home/index/ZCFGZK" target="_blank">政策法规</a></li>	
@@ -78,14 +91,14 @@
 		 </div>
 		 <!-- 导航栏容器结束 -->
 		</nav>
-	</header>
+	</div>
 	<!-- main-content -->
 	<div id="main-content">
 		<!-- 行业模块 -->
 		<section id="industry">
 			<div class="container ins-container">
 				<div class="section-title ins-title">
-				<img src="images1/section-title.png" alt="section-icon"><span>行业聚焦</span>
+				<img src="images/section-title.png" alt="section-icon"><span>行业聚焦</span>
 				</div> <!-- end of section-title -->
 				<div class="ins-content">
 					<div id="inbox1">
@@ -98,13 +111,13 @@
 						 <!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="images1/aman.png" alt="">
+								<img src="images/aman.png" alt="">
 							</div>
 							<div class="item">
-								<img src="images1/aman.png" alt="">
+								<img src="images/aman.png" alt="">
 							</div>
 							<div class="item">
-								<img src="images1/aman.png" alt="">
+								<img src="images/aman.png" alt="">
 							</div>
 						</div>
 						<!-- Controls -->
@@ -131,41 +144,41 @@
 						<div id="inbox2-content" class="tab-content">
 							<div class="tab-pane fade in active" id="zcfg">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">qwdqwdddqwqweqweqweqweqweqweqweqweqwe</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
 							<div class="tab-pane fade" id="zybz">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">asdasdasdad</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
 							<div class="tab-pane fade" id="zcjd">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
 							<div class="tab-pane fade" id="yyal">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
@@ -182,21 +195,21 @@
 						<div id="inbox3-content" class="tab-content">
 							<div class="tab-pane fade in active" id="gnsd">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
 							<div class="tab-pane fade" id="gjgc">
 								<table class="list-tb">
-								<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-								<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-								<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-								<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+								<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 								</table>
 								<button class="more-btn btn btn-default pull-right">更多</button>
 							</div>
@@ -210,39 +223,39 @@
 		<section id="strategy">
 			<div class="str-container">
 				<div class="section-title">
-					<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>战略思维</span></h2>
+					<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>战略思维</span></h2>
 				</div>
 				<div class="str-content">
 					<div class="str-box">
 						<div class="str-sub-title">宏观经济与产业趋势分析</div>
 						<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 					</div>
 					<div class="str-box">
 						<div class="str-sub-title">财务转型与价值创造</div>
 						<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 					</div>
 					<div class="str-box">
 						<div class="str-sub-title">财务分析与决策</div>
 						<table class="list-tb">
-							<tr><td class="words"><a href="#">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>		
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -254,7 +267,7 @@
 		<section id="risk-management">
 			<div class="rsk-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>风控管理</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>风控管理</span></h2>
 				</div>
 				<div class="risk-content">
 					<div id="rsk-title">
@@ -271,96 +284,120 @@
 						<div class="tab-pane fade in active" id="coso">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="iso">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="cwwb">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="kjxx">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="cwwj">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="fxgl">
 							<div class="rsk-left">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 							<div class="rsk-right">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 							</div>
 						</div>
@@ -372,7 +409,7 @@
 		<section id="improvement-management">
 			<div class="imp-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>管理增值</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>管理增值</span></h2>
 				</div>
 				<div class="imp-layout">
 				<div class="imp-row">
@@ -380,11 +417,11 @@
 						<div class="imp-subtitle">内部控制</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -393,11 +430,11 @@
 						<div class="imp-subtitle">预算管理</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -406,11 +443,11 @@
 						<div class="imp-subtitle">税务筹划</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -421,11 +458,11 @@
 						<div class="imp-subtitle">资金与成本管理</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -434,11 +471,11 @@
 						<div class="imp-subtitle">资本运营与投融资</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -447,11 +484,11 @@
 						<div class="imp-subtitle">业财融合</div>
 						<div class="imp-boxbody">
 							<table class="list-tb">
-							<tr><td class="words"><a href="#">qwdqw</a></td><td class="date">2020-07-10</td></tr>
-							<tr><td class="words"><a href="">qwqwdq</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">dqedqed</a></td><td class="date">2020-06-10</td></tr>
-							<tr><td class="words"><a href="">qedqedq</a></td><td class="date">2020-05-19</td></tr>
-							<tr><td class="words"><a href="">deqedqe</a></td><td class="date">2020-05-13</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>
+							<tr><td class="words"><a href="#">首次公开发行股票并上市公司关于印发《新冠肺炎疫情相关租金</a><td class="gap"></td></td><td class="date">2020-07-10</td></tr>	
 						</table>
 						<button class="more-btn btn btn-default pull-right">更多</button>
 						</div>
@@ -464,7 +501,7 @@
 		<section id="heat-container">
 			<div class="heat-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>热点词汇</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>热点词汇</span></h2>
 				</div>
 				<div class="map-words">
 					<div id="mw1"><a href="#" target="_blank">成本管理</a></div>
@@ -484,45 +521,45 @@
 		<section id="communication">
 			<div class="com-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>行业交流</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>行业交流</span></h2>
 				</div>
 				<div class="com-content">
 					<table id="com-layout">
 				<tr>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins1-dianli.png" alt="电力"><span>电力</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins2-huagong.png" alt="化工"><span>化工</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins3-yejin.png" alt="冶金"><span>冶金</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins4-jiaotong.jpg" alt="交通物流"><span>交通物流</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins5-jungong.jpg" alt="军工"><span>军工</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins6-shiyou.png" alt="石油"><span>石油</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins7-yiyao.png" alt="医药"><span>医药</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins1-dianli.png" alt="电力"><span>电力</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins2-huagong.png" alt="化工"><span>化工</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins3-yejin.png" alt="冶金"><span>冶金</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins4-jiaotong.jpg" alt="交通物流"><span>交通物流</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins5-jungong.jpg" alt="军工"><span>军工</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins6-shiyou.png" alt="石油"><span>石油</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins7-yiyao.png" alt="医药"><span>医药</span></a></div></td>
 				</tr>
 				<tr>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins8-jixie.png" alt="机械机电"><span>机械机电</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins9-hangkong.png" alt="航空航天"><span>航空航天</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins10-yunshu.png" alt="运输设备"><span>运输设备</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins11-meitan.png" alt="煤炭"><span>煤炭</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins12-nonglin.png" alt="农林牧渔"><span>农林牧渔</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins13-tianranqi.png" alt="天然气"><span>天然气</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins14-jiuye.png" alt="酒业"><span>酒业</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins8-jixie.png" alt="机械机电"><span>机械机电</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins9-hangkong.png" alt="航空航天"><span>航空航天</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins10-yunshu.png" alt="运输设备"><span>运输设备</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins11-meitan.png" alt="煤炭"><span>煤炭</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins12-nonglin.png" alt="农林牧渔"><span>农林牧渔</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins13-tianranqi.png" alt="天然气"><span>天然气</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins14-jiuye.png" alt="酒业"><span>酒业</span></a></div></td>
 				</tr>
 				<tr>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins15-fangdichan.png" alt="房地产"><span>房地产</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins16-jianshe.png" alt="建设建材"><span>建设建材</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins17-jinrong.png" alt="金融"><span>金融</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins18-shipin.png" alt="食品"><span>食品</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins19-shangmao.png" alt="商贸"><span>商贸</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins20-xinxi.png" alt="信息通信"><span>信息通信</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins21-yiqi.png" alt="仪器仪表"><span>仪器仪表</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins15-fangdichan.png" alt="房地产"><span>房地产</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins16-jianshe.png" alt="建设建材"><span>建设建材</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins17-jinrong.png" alt="金融"><span>金融</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins18-shipin.png" alt="食品"><span>食品</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins19-shangmao.png" alt="商贸"><span>商贸</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins20-xinxi.png" alt="信息通信"><span>信息通信</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins21-yiqi.png" alt="仪器仪表"><span>仪器仪表</span></a></div></td>
 				</tr>
 				<tr>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins22-dianzi.png" alt="电子电器"><span>电子电器</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins37-fuwu.png" alt="服务业"><span>服务业</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins38-fangzhi.png" alt="纺织服装"><span>纺织服装</span></a></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins39-yancao.png" alt="烟草"><span>烟草</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins40-shuiwu.png" alt="水务"><span>水务</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins41-xinenegyuan.png" alt="新能源"><span>新能源</span></a></div></td>
-					<td><div id="com-box"><a href="#" target="_blank"><img src="images1/ins42-baozhuang.png" alt="包装印刷"><span>包装印刷</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins22-dianzi.png" alt="电子电器"><span>电子电器</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins37-fuwu.png" alt="服务业"><span>服务业</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins38-fangzhi.png" alt="纺织服装"><span>纺织服装</span></a></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins39-yancao.png" alt="烟草"><span>烟草</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins40-shuiwu.png" alt="水务"><span>水务</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins41-xinenegyuan.png" alt="新能源"><span>新能源</span></a></div></td>
+					<td><div id="com-box"><a href="#" target="_blank"><img src="images/ins42-baozhuang.png" alt="包装印刷"><span>包装印刷</span></a></div></td>
 				</tr>
 			</table>
 				</div>
@@ -532,7 +569,7 @@
 		<section id="organization-management">
 			<div class="org-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>组织管理</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>组织管理</span></h2>
 				</div>
 				<div class="org-content">
 					<div class="org-row">
@@ -542,9 +579,11 @@
 							</div>
 							<div class="org-lists">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 								<button class="more-btn-white btn btn-default pull-right">更多</button>
 							</div>
@@ -555,9 +594,11 @@
 							</div>
 							<div class="org-lists">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 								<button class="more-btn-white btn btn-default pull-right">更多</button>
 							</div>
@@ -568,9 +609,11 @@
 							</div>
 							<div class="org-lists">
 								<ul class="nav bullet-points">
-								<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-								<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+								<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
 								</ul>
 								<button class="more-btn-white btn btn-default pull-right">更多</button>
 							</div>
@@ -595,16 +638,16 @@
 								<div class="tab-pane active fade" id="gltz">
 									<div class="org-col1">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									</div>
 									<div class="org-col2">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									<button class="more-btn-white btn btn-default pull-right">更多</button>
 									</div>
@@ -612,16 +655,16 @@
 								<div class="tab-pane fade" id="jxkh">
 									<div class="org-col1">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									</div>
 									<div class="org-col2">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									<button class="more-btn-white btn btn-default pull-right">更多</button>
 									</div>
@@ -629,16 +672,16 @@
 								<div class="tab-pane fade" id="zydd">
 									<div class="org-col1">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									</div>
 									<div class="org-col2">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									<button class="more-btn-white btn btn-default pull-right">更多</button>
 									</div>
@@ -646,16 +689,16 @@
 								<div class="tab-pane fade" id="cspx">
 									<div class="org-col1">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									</div>
 									<div class="org-col2">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									<button class="more-btn-white btn btn-default pull-right">更多</button>
 									</div>
@@ -663,16 +706,16 @@
 								<div class="tab-pane fade" id="zcrs">
 									<div class="org-col1">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									</div>
 									<div class="org-col2">
 									<ul class="nav bullet-points">
-									<li><img src="images1/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
-									<li><img src="images1/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>基于COSO框架的军工企业税收风险管理体系探索与实践</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
+									<li><img src="images/01-icon.png" alt=""><span>1231231232</span></li>
 									</ul>
 									<button class="more-btn-white btn btn-default pull-right">更多</button>
 									</div>
@@ -687,7 +730,7 @@
 		<section id="book-section">
 			<div class="book-container">
 				<div class="section-title">
-				<h2 class="center"><img src="images1/section-title.png" alt="section-icon"><span>财会书院</span></h2>
+				<h2 class="center"><img src="images/section-title.png" alt="section-icon"><span>财会书院</span></h2>
 				</div>
 				<div class="book-shelf">
 					<div class="book-subtitle">
@@ -699,44 +742,44 @@
 					</div>
 					<div id="show-book" class="tab-content">
 						<div class="tab-pane fade in active" id="qikan">
-							<img src="images1/left.png" class="pull-left btn go-left1" alt="">
-							<img src="images1/right.png" class="pull-right btn go-right1" alt="">
+							<img src="images/left.png" class="pull-left btn go-left1" alt="">
+							<img src="images/right.png" class="pull-right btn go-right1" alt="">
 							<div class="books">
 							<ul class="book-list">
-							<li><a href=""><img src="images1/44-book1.png" alt=""></a></li>
-							<li><a href=""><img src="images1/45-book2.png" alt=""></a></li>
-							<li><a href=""><img src="images1/46-book3.png" alt=""></a></li>
-							<li><a href=""><img src="images1/47-book4.png" alt=""></a></li>
-							<li><a href=""><img src="images1/48-book5.png" alt=""></a></li>
-							<li><a href=""><img src="images1/49-book6.png" alt=""></a></li>
+							<li><a href=""><img src="images/44-book1.png" alt=""></a></li>
+							<li><a href=""><img src="images/45-book2.png" alt=""></a></li>
+							<li><a href=""><img src="images/46-book3.png" alt=""></a></li>
+							<li><a href=""><img src="images/47-book4.png" alt=""></a></li>
+							<li><a href=""><img src="images/48-book5.png" alt=""></a></li>
+							<li><a href=""><img src="images/49-book6.png" alt=""></a></li>
 							</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="baozhi">
-							<img src="images1/left.png" class="pull-left btn go-left2" alt="go-left" >
-							<img src="images1/right.png" class="pull-right btn go-right2" alt="go-right">
+							<img src="images/left.png" class="pull-left btn go-left2" alt="go-left" >
+							<img src="images/right.png" class="pull-right btn go-right2" alt="go-right">
 							<div class="books">
 							<ul class="book-list1">
-							<li><a href=""><img src="images1/44-book1.png" alt=""></a></li>
-							<li><a href=""><img src="images1/45-book2.png" alt=""></a></li>
-							<li><a href=""><img src="images1/46-book3.png" alt=""></a></li>
-							<li><a href=""><img src="images1/47-book4.png" alt=""></a></li>
-							<li><a href=""><img src="images1/48-book5.png" alt=""></a></li>
-							<li><a href=""><img src="images1/49-book6.png" alt=""></a></li>
+							<li><a href=""><img src="images/44-book1.png" alt=""></a></li>
+							<li><a href=""><img src="images/45-book2.png" alt=""></a></li>
+							<li><a href=""><img src="images/46-book3.png" alt=""></a></li>
+							<li><a href=""><img src="images/47-book4.png" alt=""></a></li>
+							<li><a href=""><img src="images/48-book5.png" alt=""></a></li>
+							<li><a href=""><img src="images/49-book6.png" alt=""></a></li>
 							</ul>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nianjian">
-							<img src="images1/left.png" class="pull-left btn go-left3" alt="go-left">
-							<img src="images1/right.png" class="pull-right btn go-right3" alt="go-right">
+							<img src="images/left.png" class="pull-left btn go-left3" alt="go-left">
+							<img src="images/right.png" class="pull-right btn go-right3" alt="go-right">
 							<div class="books">
 							<ul class="book-list2">
-							<li><a href=""><img src="images1/44-book1.png" alt=""></a></li>
-							<li><a href=""><img src="images1/45-book2.png" alt=""></a></li>
-							<li><a href=""><img src="images1/46-book3.png" alt=""></a></li>
-							<li><a href=""><img src="images1/47-book4.png" alt=""></a></li>
-							<li><a href=""><img src="images1/48-book5.png" alt=""></a></li>
-							<li><a href=""><img src="images1/49-book6.png" alt=""></a></li>
+							<li><a href=""><img src="images/44-book1.png" alt=""></a></li>
+							<li><a href=""><img src="images/45-book2.png" alt=""></a></li>
+							<li><a href=""><img src="images/46-book3.png" alt=""></a></li>
+							<li><a href=""><img src="images/47-book4.png" alt=""></a></li>
+							<li><a href=""><img src="images/48-book5.png" alt=""></a></li>
+							<li><a href=""><img src="images/49-book6.png" alt=""></a></li>
 							</ul>
 							</div>
 						</div>
@@ -778,11 +821,11 @@
               </li>
               <li class="weibo">
                   <a target="_blank"  rel="noopener noreferrer" href="https://cs.cnki.net/im/client/1nbh5v">
-                      <img src="footer/zxzx.png" alt="在线咨询">
+                      <img src="images/footer/zxzx.png" alt="在线咨询">
                       <span>在线咨询</span>
                   </a>
                   <a target="_blank" href="https://shang.qq.com//open_webaio.html">
-                      <img src="footer/qqzx.png" alt="QQ咨询">
+                      <img src="images/footer/qqzx.png" alt="QQ咨询">
                       <span>QQ咨询</span>
                   </a>
               </li>
@@ -790,7 +833,7 @@
       </div>
       <div class="foot-bot clearfix warp" data-edit="y">
           <div class="t">
-              <img src="footer/foot-logo.png" alt="中国知网">
+              <img src="images/footer/foot-logo.png" alt="中国知网">
               <p class="mid">
                   <span>
                       <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/gycnki/gycnki.htm">关于我们</a>
@@ -811,7 +854,7 @@
               <p class="right">
                   <!--可信网站图片LOGO安装开始-->
                   <a id="___szfw_logo___">
-                      <img alt="可信网站" src="footer/kxwz.jpg" height="33" width="86">
+                      <img alt="可信网站" src="images/footer/kxwz.jpg" height="33" width="86">
                   </a>
                   <!--可信网站图片LOGO安装结束-->
                   <!--诚信网站图片LOGO安装开始-->
@@ -844,9 +887,10 @@
 	<script type="text/javascript" src="js/lib/jquery.min.js?v=1.2"></script>
     <script type="text/javascript" src="js/lib/jquery-migrate.min.js?v=1.4.1"></script>
 	<script type="text/javascript" src="js/lib/html5.js"></script>
-	<!-- Bootstrap js引用 -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- script 文件 -->
 	<script src="js/script.js"></script>
+	<script src="//hydev.cnki.net/HYHPSContent/Scripts/pageInit" type="text/javascript"></script>
+	<!-- Bootstrap js引用 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

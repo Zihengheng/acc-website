@@ -4,7 +4,7 @@ body{
     color: #000000;
     font-family: 'Microsoft YaHei', "微软雅黑";
 }
-header{
+div.header{
 	margin-top:0px;
 	width: 100%;
 }
@@ -14,6 +14,9 @@ section{
 div#main-content{
 	width:100%;
 	margin-top:350px;
+}
+a:hover{
+	text-decoration:none;
 }
 /* 底部内容 样式s*/
 body > div.footer > div.foot-bot.clearfix.warp > div.t{
@@ -26,16 +29,24 @@ div.b{
 
 /****列表显示***/
 table.list-tb{
-	width:100%;
+	width:342px;
 	table-layout: fixed;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #333333;
 }
 table.list-tb td a{
-	width:70%;
+	width:230px;
 	text-align: left;
 	overflow: hidden;
 	font-size: 14px;
 	color:#333333;
 	text-decoration: none;
+	padding-right:25px;
 }
 table.list-tb td.words{
 	word-break: keep-all;
@@ -44,10 +55,14 @@ table.list-tb td.words{
 	text-overflow: ellipsis;
 }
 table.list-tb td.date{
-	width:30%;
+	width:80px;
+}
+table.list-tb td.gap{
+	width:22px;
 }
 ul.bullet-points{
-	width:100%;
+	width: 364px;
+	height: 113px;
 }
 ul.bullet-points li img{
 	width:14px;
@@ -55,15 +70,19 @@ ul.bullet-points li img{
 	margin-right: 10px;
 }
 ul.bullet-points li span{
-	color:white;
+	font-family: MicrosoftYaHei;
 	font-size: 14px;
-	text-align: left;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #fefefe;
+	line-height: 33px;
 }
 ul.bullet-points li {
-	margin-bottom: 10px;
 	text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    width: 364px;
 }
 /****section title***/
 div.section-title{
@@ -76,37 +95,55 @@ div.section-title img{
 	height:76px;
 }
 div.section-title span{
-	font-weight:bold;
-	font-size:36px;
-	color:#333333;
-	margin-left:24px;
+	width: 146px;
+	height: 35px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 36px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33px;
+	letter-spacing: 4px;
+	color: #333333;
+	margin-left: 15px;
 }
 /**** btns ***/
 .more-btn{
-	border:0;
-	background-color: #168bf2;
-	width:50px;
-	height: 28px;
+	width: 50px;
+	height: 25px;
+	background-image: linear-gradient(
+		#168bf2, 
+		#168bf2), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 13px;
+	text-align: center;
 	color:white;
-	border-radius:30px;
-	font-size:14px; 
-	margin-top:22px;
+	padding:0;
+	margin-top:5px;
 }
 .more-btn-white{
-	border:0;
-	background-color:white;
-	width:50px;
-	height: 28px;
+	width: 50px;
+	height: 25px;
+	background-image: linear-gradient(
+		#fbfbfb, 
+		#fbfbfb), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 13px;
 	color:#5ebbdb;
-	border-radius:30px;
-	font-size:14px; 
-	margin-top:22px;
+	padding:0;
 }
 /** 通用结束 ***/
 
 /********************header********************/
 div#banner{
-	height:370px;
+	height:400px;
 	width:1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -115,29 +152,39 @@ div#banner{
 	padding-left: 18px;
 }
 div.header-container{
-	background: url("../images1/bg-banner.jpg") no-repeat center;
+	background: url("../images/bg-banner.jpg") no-repeat center;
 }
 /*******修改最上面的导航栏**********/
 div.top-header{
-	background-color:#0000CD;
-	background-size: cover;
 	width:100%;
 	height:48px;
 	margin-top:0px;
+	background-image: linear-gradient(
+		#0d2bac, 
+		#0d2bac), 
+	linear-gradient(
+		#001c58, 
+		#001c58);
+	background-blend-mode: normal, 
+		normal;
 }
 div#top-bar{
 	width:1200px;
 	margin:0 auto;
 	height:100%;
 }
+a.navbar-brand{
+	padding:0;
+	height:100%;
+	padding-top:2.5px;
+}
 img#brand-img{
-	position:relative;
-	width:121px;
-	height:41px;
-	top:-15px;
+	width: 120px;
+	height: 40px;
 }
 ul#top-menu{
 	height:45px;
+	margin-left:15px;
 }
 ul#top-menu li a{
 	color:white;
@@ -150,51 +197,96 @@ div.top-bar-group{
 	height:30px;
 	margin-top: 9px;
 }
+div.top-bar-group{
+	float:right;
+}
 div.top-bar-group button{
 	width:75px;
-	margin-right: 9px;
-	background-color: #168bf2;
+	margin-right: 5px;
 	border:0;
 	color:white;
-	height:100%;
+	height:30px;
 	font-size: 14px;
+	background-image: linear-gradient(
+		#168bf2, 
+		#168bf2), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 15px;
 }
-button#sign-in, button#sign-up{
+li#lgarea a{
+	display:inline-block;
 	width:50px;
+	height:30px;
+	background-image: linear-gradient(
+		#168bf2, 
+		#168bf2), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 6px;
+	color:white;
+	float:right;
+	text-align: center;
 }
+li#lgarea a:hover{color:black}
 /*******完成修改最上面的导航栏**********/
 
 /******* 修改搜索框 **********/
-div.search{
-	margin-top:0px;
-	margin-left:-22px;
-	height:41px;
+#banner > div > a{
+	width: 73px;
+	height: 38px;
+	background-image: linear-gradient(
+		#168bf2, 
+		#168bf2), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 5px;
+	color:white;
+	text-align: center;
+	padding-top: 9px;
+	text-decoration: none;
+	margin-left: 15px;
+	font-size: 14px;
+	position:relative;
+	left:-23px;
+	top:0px;
 }
-div.input-group{
+#banner > div > div{
 	width:470px;
-	height:100%;
+	height:40px;
 }
-#search-by-theme > div > div > button{
-	width:96px;
-	height:41px;
-}
-#search-by-theme > div > input{
-	width:374px;
-	height:41px;
-}
-#search-btn{
-	height:41px;
-	border:0;
-	background-color: #168bf2;
-	color: white;
+.mod-search-singlebox-s2 .keylist.avtive{line-height: 40px;}
+.mod-search-singlebox-s2 .secx{height:40px; position:relative; left:120px; width:328px;}
+.mod-search-singlebox-s2 .keylist{ left:-20px; line-height: 40px;}
+img.secbtn{
+	position:relative;
+	width:21px;
+	height:23px;
+	left:280px;
+	margin-top: 8px;
 }
 /******* finish 修改搜索框 **********/
 /******* 修改底部菜单栏 **********/
 div.bottom-menu{
-	background-color:#0000CD;
-	background-size: cover;
+	height: 45px;
+	background-image: linear-gradient(
+		#180df1, 
+		#180df1), 
+	linear-gradient(
+		#001c58, 
+		#001c58);
+	background-blend-mode: normal, 
+		normal;
 	width:100%;
-	height:44px;
 	margin-top:0px;
 }
 #header-nav > div > div.bottom-menu > div{
@@ -203,7 +295,7 @@ div.bottom-menu{
 #header-nav > div > div.bottom-menu > div > ul{
 	height:100%;
 }
-div.bottom-menu div.container{
+div.bm-container{
 	width:1200px;
 	margin:0 auto;
 }
@@ -212,13 +304,16 @@ div.bottom-menu > div > ul{
 }
 div.bottom-menu > div > ul > li{
 	width:14%;
-	line-height:40px;
+	line-height:100%;
+}
+div.bottom-menu > div > ul > li a {
+	line-height:100%;
 }
 div.bottom-menu > div > ul > li:hover{
-	background: url("../images1/menu.png") no-repeat center bottom;
+	background: url("../images/menu.png") no-repeat center bottom;
 }
 div.bottom-menu > div > ul > li:active{
-	background: url("../images1/menu.png") no-repeat center bottom;
+	background: url("../images/menu.png") no-repeat center bottom;
 }
 #header-nav > div > div.bottom-menu > div > ul > li > a{
 	color:white;
@@ -235,7 +330,7 @@ div.bottom-menu > div > ul > li > img{
 	left:40px;
 }
 #myactive a{
-	background: url("../images1/menu.png") no-repeat center bottom;
+	background: url("../images/menu.png") no-repeat center bottom;
 	line-height:100%;
 }
 /******* finish 修改底部菜单栏 **********/
@@ -243,19 +338,22 @@ div.bottom-menu > div > ul > li > img{
 
 /******************** main content ********************/
 /******* 行业聚焦section **********/
+#industry > div > div.section-title.ins-title{
+	padding-top:10px;
+}
 section#industry{
 	width:100%;
-	height:550px;
-	padding-top:64px;
+	height:470px;
+	padding-top:34px;
 	margin-top: -350px;
-	background:url("../images1/bg-industry.png") no-repeat center;
+	background:url("../images/bg-industry.png") no-repeat center;
 }
 div.ins-container{
 	width:1200px;
 	margin:0 auto;
 }
 div.ins-content{
-	margin-top:58px;
+	margin-top:35px;
 	width:100%;
 }
 div#inbox1{
@@ -263,7 +361,9 @@ div#inbox1{
 	padding:0;	
 	height:222px;
 	float:left;
-	margin-left:0px;
+	position:relative;
+	left:-20px;
+	top:20px;
 }
 div#inbox2{
 	padding-top:12px;
@@ -297,14 +397,19 @@ div#inbox3{
 }
 /***新闻栏部分***/
 div.inbox-title{
-	font-weight: bold;
+	width: 82px;
+	height: 21px;
+	font-family: MicrosoftYaHei-Bold;
 	font-size: 20px;
-	text-align: left;
-	color:#333333;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33px;
+	color: #333333;
+	margin-top: 12px;
 }
 div.inbox-tabs{
 	width:100%;
-	padding-top: 20px;
+	padding-top:10px;
 }
 #inbox2-tab{
 	height:60px;
@@ -343,18 +448,26 @@ div.inbox-tabs{
 	border:0px;
 }
 #inbox2-content{
-	height:170px;
-	width:100%;
-	padding-top: 20px;
-	padding-left: 15px;
-	padding-right:15px;
+	height:134px;
+	width:348px;
+	margin-left:20px;
+	margin-right: 15px;
+	margin-top: 10px;
 }
 #inbox3-content{
-	height:170px;
-	width:100%;
-	padding-top: 20px;
-	padding-left: 15px;
-	padding-right:15px;
+	height:134px;
+	width:348px;
+	margin-left:20px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.tab-content button{
+	position:relative;
+	left:-12px;
+}
+.tab-content button{
+	position:relative;
+	left:-12px;
 }
 /* 选中效果 */
 #inbox2-tab > li a:hover{
@@ -377,9 +490,9 @@ div.inbox-tabs{
 }
 /******* 战略思维 section **********/
 section#strategy{
-	padding-top:34px;
+	padding-top:35px;
 	width:100%;
-	margin-top: 30px;
+	margin-top: 0;
 }
 div.str-container{
 	width:1200px;
@@ -392,7 +505,7 @@ div.str-content{
 }
 div.str-box{
 	display:table-cell;
-	background:url("../images1/bg-box.png") no-repeat;
+	background:url("../images/bg-box.png") no-repeat;
 	width:391px;
 	height:340px;
 	padding-top:42px;
@@ -405,15 +518,25 @@ div.str-sub-title{
 	font-weight: bold;
 	text-align: left;
 	color:#333333;
-	margin-bottom: 37px;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+.str-box button{
+	position:relative;
+	left:-20px;
+}
+div.str-box table{
+	width:342px;
+	height:134px;
+	margin:0 auto;
 }
 /******* finish 战略思维 section **********/
 /******* 风控管理 section **********/
 section#risk-management{
 	width:100%;
 	margin-top:75px;
-	padding-top:50px;
-	background: url("../images1/bg-risk.png") no-repeat;
+	padding-top:65px;
+	background: url("../images/bg-risk.png") no-repeat;
 	z-index:-1; 
 }
 #risk-management > div > div > h2 > span{
@@ -427,9 +550,9 @@ div.rsk-container{
 }
 #risk-management > div > div.risk-content{
 	width:100%;
-	background: url("../images1/bg-rskbox.jpg") no-repeat;
+	background: url("../images/bg-rskbox.jpg") no-repeat;
 	height:406px;
-	margin-top: 20px;
+	margin-top: 32px;
 }
 div#rsk-title{
 	height:80px;
@@ -441,7 +564,7 @@ ul#rsk-tab.nav-tabs{
 }
 #rsk-tab > li{
 	width:150px;
-	height:72px;
+	height:74px;
 	display:inline-block;
 	text-align: center;
 	padding-top:20px;
@@ -464,7 +587,7 @@ ul#rsk-tab.nav-tabs{
 }
 /* content layout */
 div#rsk-body{
-	padding-top:85px;
+	padding-top:80px;
 	padding-left: 22px;
 	padding-right: 20%;
 }
@@ -477,12 +600,16 @@ div.rsk-right{
 	display:inline-block;
 	margin-left: 25px;
 }
+#rsk-body li{
+	color:white;
+}
+
 /* end of content layout */
 /******* end of 风控管理 section **********/
 /******* 管理增值 section **********/
 section#improvement-management{
 	width:100%;
-	background: url("../images1/bg-improvement.png") no-repeat;
+	background: url("../images/bg-improvement.png") no-repeat;
 	height:938px;
 	padding-top: 39px
 }
@@ -504,7 +631,7 @@ div.imp-box{
 	height:100%;
 	width:391px;
 	margin-right: 20px;
-	background: url("../images1/bg-box.png") no-repeat;
+	background: url("../images/bg-box.png") no-repeat;
 	padding-top: 52px;
 	padding-left: 32px;
 	padding-right: 22px;
@@ -516,23 +643,45 @@ div.imp-subtitle{
 	color:#333333;
 }
 div.imp-boxbody{
-	margin-top: 37px
+	margin-top: 25px
+}
+.imp-boxbody table{
+	width:342px;
+	height:134px;
+}
+div.imp-boxbody > button{
+	position:relative;
+	left:-5px;
+	width:50px;
+	height:25px;
+	text-align: center;
+	padding:0;
+	background-image: linear-gradient(
+		#168bf2, 
+		#168bf2), 
+	linear-gradient(
+		#1c1e39, 
+		#1c1e39);
+	background-blend-mode: normal, 
+		normal;
+	border-radius: 13px;
 }
 /******* end of 管理增值 section **********/
 /******* 热点词汇 section **********/
 section#heat-container{
 	width:100%;
-	background:url("../images1/bg-heatmap.png") no-repeat center bottom;
+	background:url("../images/bg-heatmap.png") no-repeat center bottom;
 	margin-top: 10px;
 	background-size:cover;
 }
 div.heat-container{
 	width:1200px;
-	height:650px;
+	height:706px;
 	margin:0 auto;
 	padding-top:48px;
 }
 div.map-words a{
+	margin-top: 30px;
 	text-decoration: none;
 }
 /****单词布局效果****/
@@ -540,61 +689,137 @@ div#mw1 a{
 	position:relative;
 	top:107px;
 	left:212px;
+	width: 108px;
+	height: 26px;
+	font-family: STXihei;
 	font-size: 27px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #2659c2;
 }
 div#mw2 a{
 	position:relative;
 	top:207px;
 	left:90px;
+	width: 52px;
+	height: 25px;
+	font-family: STXihei;
 	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #2659c2;
 }
 div#mw3 a{
 	position:relative;
 	top:208px;
 	left:312px;
+	width: 146px;
+	height: 36px;
+	font-family: MicrosoftYaHei;
 	font-size: 36px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #4068c6;
 }
 div#mw4 a{
 	position:relative;
 	top:20px;
 	left:400px;
+	width: 210px;
+	height: 41px;
+	font-family: MicrosoftYaHei;
 	font-size: 41px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #4068c6;
 }
 div#mw5 a{
 	position:relative;
 	top:-100px;
 	left:600px;
-	font-size: 27px;
+	width: 108px;
+	height: 27px;
+	font-family: STXihei;
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #2659c2;
 }
 div#mw6 a{
 	position:relative;
 	top:100px;
 	left:600px;
-	font-size:27px;
+	width: 134px;
+	height: 33px;
+	font-family: MicrosoftYaHei;
+	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #4068c6;
 }
 div#mw7 a{
 	position:relative;
 	top:-220px;
 	left:800px;
+	width: 134px;
+	height: 33px;
+	font-family: MicrosoftYaHei;
 	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #2659c2;
 }
 div#mw8 a{
 	position:relative;
 	top:-150px;
 	left:980px;
+	width: 135px;
+	height: 32px;
+	font-family: MicrosoftYaHei;
 	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #2659c2;
 }
 div#mw9 a{
 	position:relative;
 	top:-100px;
 	left:820px;
+	width: 135px;
+	height: 32px;
+	font-family: MicrosoftYaHei;
 	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #2659c2;
 }
 div#mw10 a{
 	position:relative;
 	top:-100px;
 	left:1050px;
+	width: 76px;
+	height: 28px;
+	font-family: STXihei;
 	font-size: 37px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #2659c2;
 }
 /******* end of 热点词汇 section **********/
 /******* 行业交流 section **********/
@@ -726,52 +951,54 @@ div.org-content > div.org-row{
 	width:100%;
 }
 /* box layout set up */
+.org-content li{
+	color:white;
+}
 #org-box1{
-	height:304px;
-	width:385px;
-	margin-right: 20px;
+	width: 386px;
+	height: 306px;
+	margin-right: 15px;
 	display:inline-block;
-	background: url("../images1/38-org.png") no-repeat;
+	background: url("../images/38-org.png") no-repeat;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 50px;
 }
 #org-box2{
-	height:304px;
-	width:385px;
-	margin-right: 20px;
+	width: 387px;
+	height: 307px;
+	margin-right: 15px;
 	display:inline-block;
-	background: url("../images1/39-org.png") no-repeat;
+	background: url("../images/39-org.png") no-repeat;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 50px;
 }
 #org-box3{
-	height:304px;
+	width: 390px;
+	height: 305px;
 	display:inline-block;
-	width:385px;
-	background: url("../images1/40-org.png") no-repeat;
+	background: url("../images/40-org.png") no-repeat;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 50px;
 }
 #org-box4{
-	background: url("../images1/42-org.png") no-repeat;
+	background: url("../images/42-org.png") no-repeat;
 	float:left;
-	height:290px;
-	width:334px;
+	height:292px;
+	width:336px;
 }
 #org-box5{
-	background:url("../images1/41-org.png") no-repeat;
-	display:inline-block;
-	height:290px;
-	width:840px;
-	margin-left: 20px;
+	background:url("../images/41-org.png") no-repeat;
+	height:298px;
+	width:847px;
+	margin-left: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 35px;
 	border:0;
-	left:15px;
+	float:right;
 }
 div.org-subtitle{
 	color:white;
@@ -795,7 +1022,7 @@ div.org-subtitle{
 #org-nav li{
 	display:inline-block;
 	width:80px;
-	height:43px;
+	height:44px;
 	margin-right: 32px;
 	text-align: center;
 	padding-top: 10px;
@@ -819,19 +1046,35 @@ div.org-subtitle{
 	display: table;
 }
 /* list content */
+div.org-lists{
+	width:100%;
+	height:134px;
+	padding-top:30px;
+}
 div.org-col1{
 	padding-right: 20px;
 	float:left;
-	width:380px;
+	width:341px;
 }
 div.org-col2{
 	display: inline-block;
-	width:380px;
+	width:341px;
 }
 #gltz > div.org-col2 > button{
 	position:relative;
 	top:-20px;
 }
+
+div.org-lists ul li{
+	width:300px;
+	line-height: 30px;
+	margin:0;
+}
+div.org-lists ul{height:134px;}
+.org-lists button{
+	margin-top:30px;
+}
+
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
 section#book-section{
@@ -843,15 +1086,10 @@ div.book-container{
 	margin:0 auto;
 }
 div.book-shelf{
-	background: url("../images1/book-bottom.png") no-repeat;
+	background: url("../images/book-bottom.png") no-repeat;
 	height: 400px;
 	width:100%;
 	margin-top: 80px;
-}
-div.org-lists{
-	width:100%;
-	height:210px;
-	padding-top: 40px;
 }
 /*书本陈列 set up*/
 div.book-subtitle{
@@ -872,7 +1110,7 @@ div.book-subtitle{
 	height:50px;
 }
 #book-title li.active{
-	background: url("../images1/book-up.png") no-repeat center;
+	background: url("../images/book-up.png") no-repeat center;
 }
 #book-title li a{
 	color:#333333;

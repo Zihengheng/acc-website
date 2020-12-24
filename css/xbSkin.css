@@ -49,7 +49,7 @@ html, body {
 /* 底部内容 样式s*/
 .footer{width:100%;height:379px;color:#a4acb7;font-family:"Microsoft Yahei";line-height:22px;background-color:#1c2b40;font-size: 12px;}
 .footer a{color:#66758d;font-family:"Microsoft Yahei";}
-.foot-top{width:100%;height:181px;padding-top:28px;clear:both;background:url("../footer/foot-bg.png") top center #e6e9ee;    font-size: 12px;}
+.foot-top{width:100%;height:181px;padding-top:28px;clear:both;background:url("../images/footer/foot-bg.png") top center #e6e9ee;    font-size: 12px;}
 .foot-top .content{width:1200px;margin:0 auto;overflow:hidden;}
 .foot-top li{float:left;}
 .foot-top li+li{margin-left:105px;}
@@ -59,7 +59,7 @@ html, body {
 .foot-top .weibo{width:290px;height:90px;padding-top:30px;padding-left:20px;margin-top:17px;text-align:center;border-left:1px solid #506581;}
 .foot-top .weibo a{display:inline-block;line-height:40px;}
 .foot-top .weibo a+a{margin-left:35px;}
-.foot-top .weibo img{width:40px;height:40px;background:url("../footer/weibo-bg.png") no-repeat 0 0;}.foot-top .weibo a:hover img{background-position:-40px 0;}.foot-bot{width:1140px;margin:0 auto;overflow:hidden;color:#a4acb7;}
+.foot-top .weibo img{width:40px;height:40px;background:url("../images/footer/weibo-bg.png") no-repeat 0 0;}.foot-top .weibo a:hover img{background-position:-40px 0;}.foot-bot{width:1140px;margin:0 auto;overflow:hidden;color:#a4acb7;}
 .foot-bot .t{height:60px;padding-top:27px;border-bottom:1px solid #2e435e;}.foot-bot .t a{color:#a4acb7;}
 .foot-bot .t>img{float:left;width:110px;}
 .foot-bot .t .mid{float:left;margin-left:20px;}
@@ -101,7 +101,7 @@ html, body {
 .head-wrap{height: 30px;line-height:26px;background:#4873f1;min-width:1200px;}
 .head{width:1200px;margin: 0 auto;font-size: 13px;color:#fff;text-indent:29px;font-size: 14px;}
 .logo{margin-top:18px;margin-left:29px;}
-.mod-login-horizontal-s1{line-height: 70px;}
+/*.mod-login-horizontal-s1{line-height: 70px;}*/
 .mod-login .dlu{background:#3461a6;}
 .mod-login .dlu-ip{border:1px solid #3461a6;background:#f1f5f9;border-radius:5px;color:#3461a6;}
 .tpl-banner{width:100%;}

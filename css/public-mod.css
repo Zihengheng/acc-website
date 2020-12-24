@@ -1563,11 +1563,6 @@ a:focus {
 .mod-search-singlebox-s2 {
     position: relative;
     z-index: 999;
-    height: 50px;
-    padding-left: 150px;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0 3px 6px #ddd;
-    box-shadow: 0 3px 6px #ddd;
 }
 
 .mod-search-singlebox-s2 .keylist {
@@ -1582,8 +1577,6 @@ a:focus {
     position: relative;
     z-index: 2;
     display: block;
-    height: 50px;
-    line-height: 50px;
     text-align: center;
     background-color: #fff;
     cursor: pointer;
@@ -1681,8 +1674,6 @@ a:focus {
     background: #fff url(../images/bg-btn-search1.png) 5px center no-repeat;
     border-width: 0;
     cursor: pointer;
-    height: 50px;
-    width: 60px;
     text-indent: -200%;
     overflow: hidden;
 }
@@ -3492,7 +3483,7 @@ a:focus {
 .mod-login-horizontal-s1 {
     padding-top: 2px;
     line-height: 34px;
-    padding: 0 30px;
+    padding:0;
 }
 
 .mod-login-horizontal-s1 li {
