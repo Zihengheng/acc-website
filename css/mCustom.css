@@ -146,7 +146,7 @@ div.section-title span{
 
 /********************header********************/
 div#banner{
-	height:400px;
+	height:320px;
 	width:1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -382,7 +382,7 @@ div#inbox1{
 	float:left;
 	position:relative;
 	left:-20px;
-	top:20px;
+	top:10px;
 }
 div#inbox2{
 	padding-top:12px;
@@ -398,6 +398,12 @@ div#inbox3{
 	width:380px;
 	height:300px;
 	margin-right: 15px;
+}
+.description{
+	position:relative;
+	background: blue;
+	opacity:0.8;
+	top:-20px;
 }
 #show-img{
 	width:349px;
@@ -420,11 +426,12 @@ div.inbox-title{
 	height: 21px;
 	font-family: MicrosoftYaHei-Bold;
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: bold;
 	font-stretch: normal;
 	line-height: 33px;
 	color: #333333;
 	margin-top: 12px;
+
 }
 div.inbox-tabs{
 	width:100%;
@@ -982,7 +989,7 @@ div.org-content > div.org-row{
 	width: 386px;
 	height: 306px;
 	margin-right: 15px;
-	display:inline-block;
+	float:left;
 	background: url("../images/38-org.png") no-repeat;
 	padding-left: 40px;
 	padding-right: 40px;
