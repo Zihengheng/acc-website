@@ -40,7 +40,7 @@ table.list-tb{
 	color: #333333;
 }
 table.list-tb td a{
-	width:230px;
+	width:220px;
 	text-align: left;
 	overflow: hidden;
 	font-size: 14px;
@@ -55,7 +55,7 @@ table.list-tb td.words{
 	text-overflow: ellipsis;
 }
 table.list-tb td.date{
-	width:80px;
+	width:100px;
 }
 table.list-tb td.gap{
 	width:22px;
@@ -123,6 +123,9 @@ div.section-title span{
 	color:white;
 	padding:0;
 	margin-top:5px;
+}
+.more-btn:hover{
+	color:#00f4ff;
 }
 .more-btn-white{
 	width: 50px;
@@ -201,7 +204,7 @@ div.top-bar-group{
 	float:right;
 }
 div.top-bar-group button{
-	width:75px;
+	width:85px;
 	margin-right: 5px;
 	border:0;
 	color:white;
@@ -234,7 +237,22 @@ li#lgarea a{
 	float:right;
 	text-align: center;
 }
-li#lgarea a:hover{color:black}
+li#lgarea a:hover{color:#00f4ff;}
+div.top-bar-group button:hover{color:#00f4ff;}
+#banner > div > a:hover{color:#00f4ff;}
+.secx label{
+	width: 120px;
+	height: 14px;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40px;
+	letter-spacing: 1px;
+	color: #333333;
+	margin-top: -5px;
+}
+.mod-search-singlebox-s2 .keylist .list {line-height: 35px;}
 /*******完成修改最上面的导航栏**********/
 
 /******* 修改搜索框 **********/
@@ -600,7 +618,12 @@ div.rsk-right{
 	display:inline-block;
 	margin-left: 25px;
 }
-#rsk-body li{
+div.rsk-right > ul > li{
+	line-height: 33px;
+	color:white;
+}
+div.rsk-left> ul > li{
+	line-height: 33px;
 	color:white;
 }
 
@@ -1069,7 +1092,7 @@ div.org-col2 button{
 }
 div.org-lists ul li{
 	width:300px;
-	line-height: 29px;
+	line-height: 30px;
 	margin:0;
 }
 div.org-lists ul li img{
