@@ -224,6 +224,7 @@ li#lgarea a{
 	display:inline-block;
 	width:50px;
 	height:30px;
+	line-height: 30px;
 	background-image: linear-gradient(
 		#168bf2, 
 		#168bf2), 
