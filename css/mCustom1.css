@@ -386,19 +386,23 @@ div#inbox1{
 	top:10px;
 }
 div#inbox2{
-	padding-top:12px;
+	padding-top:10px;
 	float:left;
 	width:390px;
 	height:300px;
 	margin-left:25px;	
 	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
 }
 div#inbox3{
-	padding-top:12px;
+	padding-top:19px;
 	float:right;
 	width:380px;
 	height:300px;
 	margin-right: 15px;
+	padding-left: 10px;
+	padding-right: 15px;
 }
 .description{
 	position:relative;
@@ -422,7 +426,38 @@ div#inbox3{
 	color:#333333;
 }
 /*** 新闻栏部分 ***/
-
+#inbox2 .mod-tab-bd {
+	margin-top:0px;
+}
+.ins-content .mod-artlist{
+	width: 348px;
+	height: 134px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #333333;
+}
+.ins-content .mod-tab-head{
+    width: 370px;
+	height: 60px;
+	padding-left:0;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ins-content .mod-tab-head li{
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33px;
+	color: #333333;
+	margin:0;
+	width:90px;
+}
 /*** end of 新闻栏部分 ***/
 
 /******* 战略思维 section **********/
@@ -454,6 +489,9 @@ div.str-box{
 	width:342px;
 	height:134px;
 	margin:0 auto;
+}
+.str-box  ul > li:nth-child(2){
+	margin-top:30px;
 }
 
 /******* finish 战略思维 section **********/
@@ -513,25 +551,29 @@ ul#rsk-tab.nav-tabs{
 }
 /* content layout */
 div#rsk-body{
-	padding-top:80px;
+	padding-top:60px;
 	padding-left: 22px;
 	padding-right: 20%;
 }
-div.rsk-left{
-	width:40%;
-	display:inline-block;
-}
-div.rsk-right{
-	width:40%;
-	display:inline-block;
-	margin-left: 25px;
-}
-div.rsk-right > ul > li{
+#rsk-body li.item{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
 	line-height: 33px;
+	letter-spacing: 1px;
+	color: #fefefe;
+	width:364px;
+	display:block;
+	float:left;
+}
+#rsk-body .mod-artlist-field1{
+	width:780px;
+}
+#rsk-body li.item a{
 	color:white;
 }
-div.rsk-left> ul > li{
-	line-height: 33px;
+#rsk-body .mod-artlist-field1 .tit a{
 	color:white;
 }
 
@@ -567,35 +609,13 @@ div.imp-box{
 	padding-left: 32px;
 	padding-right: 22px;
 }
-div.imp-subtitle{
-	font-weight: bold;
-	font-size: 20px;
-	text-align: left;
-	color:#333333;
-}
-div.imp-boxbody{
-	margin-top: 25px
-}
-.imp-boxbody table{
+.imp-box ul{
 	width:342px;
-	height:134px;
+	margin-left: auto;
+	margin-right: auto;
 }
-div.imp-boxbody > button{
-	position:relative;
-	left:-5px;
-	width:50px;
-	height:25px;
-	text-align: center;
-	padding:0;
-	background-image: linear-gradient(
-		#168bf2, 
-		#168bf2), 
-	linear-gradient(
-		#1c1e39, 
-		#1c1e39);
-	background-blend-mode: normal, 
-		normal;
-	border-radius: 13px;
+.imp-box li.tit{
+	margin-bottom:30px;
 }
 /******* end of 管理增值 section **********/
 /******* 热点词汇 section **********/
@@ -882,9 +902,6 @@ div.org-content > div.org-row{
 	width:100%;
 }
 /* box layout set up */
-.org-content li{
-	color:white;
-}
 #org-box1{
 	width: 386px;
 	height: 306px;
@@ -931,89 +948,29 @@ div.org-content > div.org-row{
 	border:0;
 	float:right;
 }
-div.org-subtitle{
-	color:white;
-	font-weight: bold;
-	font-size:20px;
-	text-align: left;
-	width:100%;
-}
-#org-box5 > div.org-tabs{
-	margin-top:15px;
-}
 /*nav list set up*/
-#org-box5 > div.org-lists{
-	padding-top: 20px;
-}
-#org-nav{
-	border-bottom: 0px;
-	height:30px;
-	padding-left: 0px;
-}
-#org-nav li{
-	display:inline-block;
-	width:80px;
-	height:44px;
-	margin-right: 32px;
-	text-align: center;
-	padding-top: 10px;
-}
-#org-nav li a{
-	height:100%;
-	text-decoration: none;
-	color:white;
-	border:0px;
-	font-size: 16px;
-}
-#org-nav > li.active > a{
-	background: none;
-	color:#0a6bd7;
-}
-#org-nav > li.active{
-	border-bottom:3px solid  #0a6bd7;
-}
-#org1{
-	height:120px;
-	display: table;
-}
-/* list content */
-div.org-lists{
-	width:100%;
-	height:134px;
-	padding-top:30px;
-}
-div.org-col1{
-	padding-right: 20px;
-	float:left;
-	width:341px;
-}
-div.org-col2{
-	display: inline-block;
-	width:370px;
-}
-div.org-col2 button{
-	margin-top: -5px;
-
-}
-#gltz > div.org-col2 > button{
-	
-}
-div.org-lists ul li{
+.org-content ul.mod-artlist-field1{
 	width:300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 21px;
+}
+.org-content ul.mod-artlist-field1 li{
+	color:white;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
 	line-height: 30px;
-	margin:0;
+	letter-spacing: 1px;
 }
-div.org-lists ul li img{
-	width: 13px;
-	height: 18px;
-	color: #fbfbfb;
+.org-content ul.mod-artlist-field1 li a{
+	color:white;
 }
-
-div.org-lists ul{height:134px;}
-.org-lists button{
-	margin-top:30px;
+.org-content ul.mod-artlist-field1 li.tit{
+	margin-bottom: 10px;
+	font-weight: bold;
 }
-
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
 #book-section{
