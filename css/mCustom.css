@@ -18,6 +18,7 @@ div#main-content{
 a:hover{
 	text-decoration:none;
 }
+
 /* 底部内容 样式s*/
 body > div.footer > div.foot-bot.clearfix.warp > div.t{
 	height:90px;
@@ -28,62 +29,6 @@ div.b{
 }
 
 /****列表显示***/
-table.list-tb{
-	width:342px;
-	table-layout: fixed;
-	font-family: MicrosoftYaHei;
-	font-size: 14px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 30px;
-	letter-spacing: 1px;
-	color: #333333;
-}
-table.list-tb td a{
-	width:220px;
-	text-align: left;
-	overflow: hidden;
-	font-size: 14px;
-	color:#333333;
-	text-decoration: none;
-	padding-right:25px;
-}
-table.list-tb td.words{
-	word-break: keep-all;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-table.list-tb td.date{
-	width:100px;
-}
-table.list-tb td.gap{
-	width:22px;
-}
-ul.bullet-points{
-	width: 364px;
-	height: 113px;
-}
-ul.bullet-points li img{
-	width:14px;
-	height:18px;
-	margin-right: 10px;
-}
-ul.bullet-points li span{
-	font-family: MicrosoftYaHei;
-	font-size: 14px;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 1px;
-	color: #fefefe;
-	line-height: 33px;
-}
-ul.bullet-points li {
-	text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 364px;
-}
 /****section title***/
 div.section-title{
 	width:300px;
@@ -356,7 +301,7 @@ div.bottom-menu > div > ul > li > img{
 /******************** end of header ********************/
 
 /******************** main content ********************/
-/******* 行业聚焦section **********/
+/*******=============== 行业聚焦section ==============**********/
 #industry > div > div.section-title.ins-title{
 	padding-top:10px;
 }
@@ -385,19 +330,23 @@ div#inbox1{
 	top:10px;
 }
 div#inbox2{
-	padding-top:12px;
-	display:inline-block;
-	width:380px;
+	padding-top:10px;
+	float:left;
+	width:390px;
 	height:300px;
 	margin-left:25px;	
 	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
 }
 div#inbox3{
-	padding-top:12px;
+	padding-top:19px;
 	float:right;
 	width:380px;
 	height:300px;
 	margin-right: 15px;
+	padding-left: 10px;
+	padding-right: 15px;
 }
 .description{
 	position:relative;
@@ -420,100 +369,41 @@ div#inbox3{
 #inbox3-tab > li > a{
 	color:#333333;
 }
-/***新闻栏部分***/
-div.inbox-title{
-	width: 82px;
-	height: 21px;
-	font-family: MicrosoftYaHei-Bold;
-	font-size: 20px;
-	font-weight: bold;
+/*** 新闻栏部分 ***/
+#inbox2 .mod-tab-bd {
+	margin-top:0px;
+}
+.ins-content .mod-artlist{
+	width: 348px;
+	height: 134px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #333333;
+}
+.ins-content .mod-tab-head{
+    width: 370px;
+	height: 60px;
+	padding-left:0;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ins-content .mod-tab-head li{
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	font-weight: normal;
 	font-stretch: normal;
 	line-height: 33px;
 	color: #333333;
-	margin-top: 12px;
+	margin:0;
+	width:90px;
+}
+/*** end of 新闻栏部分 ***/
 
-}
-div.inbox-tabs{
-	width:100%;
-	padding-top:10px;
-}
-#inbox2-tab{
-	height:60px;
-	padding-inline-start:15px;
-	border:0px;
-}
-#inbox3-tab{
-	height:60px;
-	padding-inline-start:15px;
-	border:0px;
-}
-#inbox2-tab > li {
-	width:25%;
-	display:inline-block;
-	height:100%;
-	text-align:center;
-}
-#inbox3-tab > li {
-	width:25%;
-	display:inline-block;
-	height:100%;
-	text-align:center;
-}
-#inbox2-tab > li a{
-	text-decoration: none;
-	line-height:70px;
-	font-size: 18px;
-	width:100%;
-	border:0px;
-}
-#inbox3-tab > li a{
-	text-decoration: none;
-	line-height:70px;
-	font-size: 18px;
-	width:100%;
-	border:0px;
-}
-#inbox2-content{
-	height:134px;
-	width:348px;
-	margin-left:20px;
-	margin-right: 15px;
-	margin-top: 10px;
-}
-#inbox3-content{
-	height:134px;
-	width:348px;
-	margin-left:20px;
-	margin-right: 15px;
-	margin-top: 10px;
-}
-.tab-content button{
-	position:relative;
-	left:-12px;
-}
-.tab-content button{
-	position:relative;
-	left:-12px;
-}
-/* 选中效果 */
-#inbox2-tab > li a:hover{
-	color:#168bf2;	
-}
-#inbox2-tab > li.active a{
-	color:#168bf2;	
-}
-#inbox3-tab > li a:hover{
-	color:#168bf2;	
-}
-#inbox3-tab > li.active a{
-	color:#168bf2;	
-}
-#inbox2-tab > li.active{
-	border-bottom:3px solid #168bf2;
-}
-#inbox3-tab > li.active{
-	border-bottom:3px solid #168bf2;
-}
 /******* 战略思维 section **********/
 #strategy{
 	padding-top:35px;
@@ -539,23 +429,15 @@ div.str-box{
 	padding-right: 22px;
 	margin-right: 22px;
 }
-div.str-sub-title{
-	font-size: 20px;
-	font-weight: bold;
-	text-align: left;
-	color:#333333;
-	margin-bottom: 30px;
-	margin-left: 5px;
-}
-.str-box button{
-	position:relative;
-	left:-20px;
-}
-div.str-box table{
+.str-box ul{
 	width:342px;
 	height:134px;
 	margin:0 auto;
 }
+.str-box  ul > li:nth-child(2){
+	margin-top:30px;
+}
+
 /******* finish 战略思维 section **********/
 /******* 风控管理 section **********/
 #risk-management{
@@ -613,17 +495,29 @@ ul#rsk-tab.nav-tabs{
 }
 /* content layout */
 div#rsk-body{
-	padding-top:80px;
+	padding-top:60px;
 	padding-left: 22px;
 	padding-right: 20%;
 }
-
-div.rsk-right > ul > li{
+#rsk-body li.item{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
 	line-height: 33px;
+	letter-spacing: 1px;
+	color: #fefefe;
+	width:364px;
+	display:block;
+	float:left;
+}
+#rsk-body .mod-artlist-field1{
+	width:780px;
+}
+#rsk-body li.item a{
 	color:white;
 }
-div.rsk-left> ul > li{
-	line-height: 33px;
+#rsk-body .mod-artlist-field1 .tit a{
 	color:white;
 }
 
@@ -659,35 +553,13 @@ div.imp-box{
 	padding-left: 32px;
 	padding-right: 22px;
 }
-div.imp-subtitle{
-	font-weight: bold;
-	font-size: 20px;
-	text-align: left;
-	color:#333333;
-}
-div.imp-boxbody{
-	margin-top: 25px
-}
-.imp-boxbody table{
+.imp-box ul{
 	width:342px;
-	height:134px;
+	margin-left: auto;
+	margin-right: auto;
 }
-div.imp-boxbody > button{
-	position:relative;
-	left:-5px;
-	width:50px;
-	height:25px;
-	text-align: center;
-	padding:0;
-	background-image: linear-gradient(
-		#168bf2, 
-		#168bf2), 
-	linear-gradient(
-		#1c1e39, 
-		#1c1e39);
-	background-blend-mode: normal, 
-		normal;
-	border-radius: 13px;
+.imp-box li.tit{
+	margin-bottom:30px;
 }
 /******* end of 管理增值 section **********/
 /******* 热点词汇 section **********/
@@ -974,9 +846,6 @@ div.org-content > div.org-row{
 	width:100%;
 }
 /* box layout set up */
-.org-content li{
-	color:white;
-}
 #org-box1{
 	width: 386px;
 	height: 306px;
@@ -1023,89 +892,60 @@ div.org-content > div.org-row{
 	border:0;
 	float:right;
 }
-div.org-subtitle{
-	color:white;
-	font-weight: bold;
-	font-size:20px;
-	text-align: left;
-	width:100%;
-}
-#org-box5 > div.org-tabs{
-	margin-top:15px;
-}
 /*nav list set up*/
-#org-box5 > div.org-lists{
-	padding-top: 20px;
-}
-#org-nav{
-	border-bottom: 0px;
-	height:30px;
-	padding-left: 0px;
-}
-#org-nav li{
-	display:inline-block;
-	width:80px;
-	height:44px;
-	margin-right: 32px;
-	text-align: center;
-	padding-top: 10px;
-}
-#org-nav li a{
-	height:100%;
-	text-decoration: none;
-	color:white;
-	border:0px;
-	font-size: 16px;
-}
-#org-nav > li.active > a{
-	background: none;
-	color:#0a6bd7;
-}
-#org-nav > li.active{
-	border-bottom:3px solid  #0a6bd7;
-}
-#org1{
-	height:120px;
-	display: table;
-}
-/* list content */
-div.org-lists{
-	width:100%;
-	height:134px;
-	padding-top:30px;
-}
-div.org-col1{
-	padding-right: 20px;
-	float:left;
-	width:341px;
-}
-div.org-col2{
-	display: inline-block;
-	width:370px;
-}
-div.org-col2 button{
-	margin-top: -5px;
-
-}
-#gltz > div.org-col2 > button{
-	
-}
-div.org-lists ul li{
+.org-content ul.mod-artlist-field1{
 	width:300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 21px;
+}
+.org-content ul.mod-artlist-field1 li{
+	color:white;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
 	line-height: 30px;
-	margin:0;
+	letter-spacing: 1px;
 }
-div.org-lists ul li img{
-	width: 13px;
-	height: 18px;
-	color: #fbfbfb;
+.org-content ul.mod-artlist-field1 li a{
+	color:white;
 }
-
-div.org-lists ul{height:134px;}
-.org-lists button{
-	margin-top:30px;
+.org-content ul.mod-artlist-field1 li.tit{
+	margin-bottom: 10px;
+	font-weight: bold;
 }
-
+#org-box5 .mob-tab-head{
+	width:500px;
+	height:30px;
+}
+#org-box5 .mob-tab-head li{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33px;
+	letter-spacing: 2px;
+}
+#org-box5  ul.mod-artlist-field1{
+	height:135px;
+	width:700px;
+}
+#org-box5  ul.mod-artlist-field1 li{
+	display:block;
+	width:321px;
+	float:left;
+	margin-right: 20px;
+	margin-left: -20px;
+}
+#org-box5  ul.mod-artlist-field1 .item-more{
+	position:relative;
+	left:400px;
+	top:-35px;
+}
+#org-box5 .mod-tab-bd{
+	height:140px;
+}
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
 #book-section{
