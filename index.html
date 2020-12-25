@@ -38,9 +38,9 @@
 							<button class="btn" id="navbtn-2">申请试用</button>
 							<ul class="mod-login mod-login-horizontal-s1 fr">
                         <li id="lgarea" class="login" data-lg="outFn">
-                        <a href="javascript:;" id="login" class="login-btn-login">登录</a>
                         <a href="javascript:$.Reg();" class="login-btn-reg">注册</a>
-                    </li>
+                        <a href="javascript:;" id="login" class="login-btn-login">登录</a>
+                        </li>
                 </ul>
 						</div>
 					</div>
@@ -54,8 +54,21 @@
                             <span class="active">主题<i></i></span>
                             <ul class="list">
                                 <li class="current" data-rel="0" data-code="SQJE">主题</li>
-                                <li data-rel="2" data-code="SQJJ">姓名</li>
-                                <li data-rel="1" data-code="SQJE">单位</li>
+                                <li data-rel="1" data-code="SQJJ">全文</li>
+                                <li data-rel="2" data-code="SQJE">篇关摘</li>
+                                <li data-rel="3" data-code="SQJE">篇名</li>
+                                <li data-rel="4" data-code="SQJE">关键词</li>
+                                <li data-rel="5" data-code="SQJE">作者</li>
+                                <li data-rel="6" data-code="SQJE">单位</li>
+                                <li data-rel="7" data-code="SQJE">刊名</li>
+                                <li data-rel="8" data-code="SQJE">ISSN</li>
+                                <li data-rel="9" data-code="SQJE">CN</li>
+                                <li data-rel="10" data-code="SQJE">基金</li>
+                                <li data-rel="11" data-code="SQJE">摘要</li>
+                                <li data-rel="12" data-code="SQJE">参考文献</li>
+                                <li data-rel="13" data-code="SQJE">中图分类号</li>
+                                <li data-rel="14" data-code="SQJE">词目</li>
+                                <li data-rel="15" data-code="SQJE">出版者</li>
                             </ul>
                         </div>
                         <div class="secx ">
@@ -81,7 +94,7 @@
 					<li class="active" id="myactive"><a href="#">首页</a></li>	
 					<li><a href="//hydev.cnki.net/kweb/home/index/ZCFGZK" target="_blank">政策法规</a></li>	
 					<li><a href="//hydev.cnki.net/Kweb/home/index/CWKJZK" target="_blank">财务会计</a></li>
-					<li><a href="//hydev.cnki.net/Kweb/home/index/NBSJZK" target="_blank">管理会计</a></li>
+					<li><a href="//hydev.cnki.net/Kweb/home/index/GLKJZK" target="_blank">管理会计</a></li>
 					<li><a href="//hydev.cnki.net/Kweb/home/index/CWGLZK" target="_blank">财务管理</a></li>
 					<li><a href="//hydev.cnki.net/Kweb/home/index/SFGLZK" target="_blank">税费管理</a></li>
 					<li><a href="//hydev.cnki.net/Kweb/home/index/NBSJZK" target="_blank">审计监督</a></li>
@@ -263,7 +276,7 @@
 					<div id="mw3"><a href="//hydev.cnki.net/kcms/detail/knetsearch.aspx?dbcode=QYJJ&sfield=kw&skey=管理会计" target="_blank">管理会计</a></div>
 					<div id="mw4"><a href="//hydev.cnki.net/kcms/detail/knetsearch.aspx?dbcode=QYJJ&sfield=kw&skey=投资者关系
                     " target="_blank">投资者关系</a></div>
-					<div id="mw5"><a href="#" target="_blank">资金管理</a></div>
+					<div id="mw5"><a href="//hydev.cnki.net/kcms/detail/knetsearch.aspx?dbcode=QYJJ&sfield=kw&skey=CFO" target="_blank">CFO</a></div>
 					<div id="mw6"><a href="//hydev.cnki.net/kcms/detail/knetsearch.aspx?dbcode=QYJJ&sfield=kw&skey=对赌协议
 " target="_blank">对赌协议</a></div>
 					<div id="mw7"><a href="//hydev.cnki.net/kcms/detail/knetsearch.aspx?dbcode=QYJJ&sfield=kw&skey=企业估值" target="_blank">企业估值</a></div>
@@ -287,15 +300,15 @@
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','电力','(中图分类号=F406.7?*(F416.61+F426.61+F407.61) and 主题=电力+电网-电机)')
 " target="_blank"><img src="images/ins1-dianli.png" alt="电力"><span>电力</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','化学品','(中图分类号=F406.7?*(F416.7?+F426.7+F407.7?)-(F416.71+F426.71+F407.71)-(F416.77+F426.77+F407.77) NOT 主题=药+药品+制药+医药)')
-" target="_blank"><img src="images/ins2-huagong.png" alt="化工"><span>化工</span></a></div></td>
+" target="_blank"><img src="images/ins2-huagong.png" alt="化工"><span>化学品</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','金属','(中图分类号=F406.7?*(F416.3?+F426.3?+F407.3?))')
 " target="_blank"><img src="images/ins3-yejin.png" alt="金属"><span>金属</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','交通运输','(中图分类号=F530.68?+F540.58?+F550.66?+F560.68?+F570.5?)')
-" target="_blank"><img src="images/ins4-jiaotong.jpg" alt="交通物流"><span>交通物流</span></a></div></td>
+" target="_blank"><img src="images/ins4-jiaotong.jpg" alt="交通物流"><span>交通运输</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','防务','(中图分类号=F406.7?*(F416.474+F426.474+F407.474+F416.5+F426.5+F407.5+F416.48+F426.48+F407.48))')
 " target="_blank"><img src="images/ins5-jungong.jpg" alt="防务"><span>防务</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','石油、天然气','(中图分类号=F406.7?*(F416.22+F426.22+F407.22))')
-" target="_blank"><img src="images/ins6-shiyou.png" alt="石油天然气"><span>石油、天然气</span></a></div></td>
+" target="_blank"><img src="images/ins6-shiyou.png" alt="石油天然气"><span>石油天然气</span></a></div></td>
 				</tr>
 				<tr>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','机械设备','(中图分类号=F406.7?*(F416.4?+F426.4?+F407.4?)-(F416.41+F426.41+F407.41)-(F416.46+F426.46+F407.46)-(F416.47?+F426.47?+F407.47?)-(F416.48+F426.48+F407.48) NOT 主题=医疗设备+医疗器械)')
@@ -309,7 +322,7 @@
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','食品饮料','(中图分类号=F406.7?*(F416.82+F426.82+F407.82))')
 " target="_blank"><img src="images/ins14-jiuye.png" alt="酒业"><span>食品饮料</span></a></div></td>
 					<td><div id="com-box"><a href="jjavascript:$.PostMore('QYJJ,QYJTHY','医药','((中图分类号=F406.7?*(F416.7?+F426.7?+F407.7?) AND 主题=药+药品+制药+医药-农药) OR (中图分类号=F406.7?*(F416.4?+F426.4?+F407.4?) AND 主题=医疗设备+医疗器械))')
-" target="_blank"><img src="images/ins7-yiyao.png" alt="医药"><span>药品和饮料设备</span></a></div></td>
+" target="_blank"><img src="images/ins7-yiyao.png" alt="医药"><span>医药</span></a></div></td>
 				</tr>
 				<tr>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','房地产','(中图分类号=F299.233.42+F293.342?)')
@@ -329,7 +342,7 @@
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','电子设备','(中图分类号=F406.7?*(F416.63+F426.63+F407.63+F416.67?+F426.67?+F407.67?))')
 " target="_blank"><img src="images/ins22-dianzi.png" alt="电子设备"><span>电子设备</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','旅游、服务业','(中图分类号=F590.66?+F715.5?*(F719?+F726.9?))')
-" target="_blank"><img src="images/ins37-fuwu.png" alt="旅游、服务业"><span>旅游、服务业</span></a></div></td>
+" target="_blank"><img src="images/ins37-fuwu.png" alt="旅游、服务业"><span>旅游服务业</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','公用事业','(中图分类号=F275?*F299.24)')" target="_blank"><img src="images/ins40-shuiwu.png" alt="公用事业"><span>公用事业</span></a></div></td>
 					<td><div id="com-box"><a href="javascript:$.PostMore('QYJJ,QYJP,QYJI','房屋建筑','(中图分类号=F406.7?*(F416.9?+F426.9?+F407.9?) AND 主题=房屋建筑+房建+房屋建设-名片-导语-水电)')
 " target="_blank"><img src="images/ins41-xinenegyuan.png" alt="房屋建筑"><span>房屋建筑</span></a></div></td>

@@ -15,8 +15,20 @@ div#main-content{
 	width:100%;
 	margin-top:350px;
 }
-a:hover{
-	text-decoration:none;
+
+.mod-artlist-field1 li a:hover{
+	color:#168bf2;
+	text-decoration: none;
+}
+.mod-artlist-field1 li.item{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch:; normal;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color: #333333;
+	width: 342px;
 }
 
 /* 底部内容 样式s*/
@@ -180,7 +192,7 @@ li#lgarea a{
 		normal;
 	border-radius: 6px;
 	color:white;
-	float:right;
+	float:left;
 	text-align: center;
 }
 li#lgarea a:hover{color:#00f4ff;}
@@ -388,7 +400,7 @@ div#inbox3{
     width: 370px;
 	height: 60px;
 	padding-left:0;
-	margin-top: 12px;
+	margin-top: 22px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -404,7 +416,13 @@ div#inbox3{
 	height:40px;
 }
 .ins-content .mod-tab-head li.cur{
-	border-bottom: 2px solid;G
+	border-bottom: 3px solid;G
+}
+#inbox2 ul.mod-artlist-field1{
+	margin-left: 10px;
+}
+#inbox3 ul.mod-artlist-field1{
+	margin-left: 10px;
 }
 /*** end of 新闻栏部分 ***/
 
@@ -525,6 +543,14 @@ div#rsk-body{
 	color:white;
 }
 
+#rsk-body li.tit{
+	visibility: hidden;
+}
+#rsk-body .mod-artlist .item .icon{
+	background: url("../images/01-icon.png");
+	width:13px;
+	height:18px;
+}
 /* end of content layout */
 /******* end of 风控管理 section **********/
 /******* 管理增值 section **********/
@@ -899,9 +925,8 @@ div.org-content > div.org-row{
 /*nav list set up*/
 .org-content ul.mod-artlist-field1{
 	width:300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 21px;
+	margin-left:-15px;
+	margin-top: 0px;
 }
 .org-content ul.mod-artlist-field1 li{
 	color:white;
@@ -916,12 +941,21 @@ div.org-content > div.org-row{
 	color:white;
 }
 .org-content ul.mod-artlist-field1 li.tit{
-	margin-bottom: 10px;
+	height: 19px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 18px;
 	font-weight: bold;
+	font-stretch: normal;
+	line-height: 33px;
+	letter-spacing: 2px;
+	color: #fbfbfb;
+	margin-bottom: 50px;
 }
-#org-box5 .mob-tab-head{
+#org-box5 > div > ul{
 	width:500px;
 	height:30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #org-box5 .mob-tab-head li{
 	font-family: MicrosoftYaHei;
@@ -930,10 +964,15 @@ div.org-content > div.org-row{
 	font-stretch: normal;
 	line-height: 33px;
 	letter-spacing: 2px;
+	height:30px;
 }
+/*#org-box5 .mob-tab-head li.cur{
+	border-bottom: 3px solid blue;
+}*/
 #org-box5  ul.mod-artlist-field1{
 	height:135px;
 	width:700px;
+	margin-left:10px;
 }
 #org-box5  ul.mod-artlist-field1 li{
 	display:block;
@@ -941,6 +980,7 @@ div.org-content > div.org-row{
 	float:left;
 	margin-right: 20px;
 	margin-left: -20px;
+	/*margin-top: 10px;*/
 }
 #org-box5  ul.mod-artlist-field1 .item-more{
 	position:relative;
@@ -949,6 +989,22 @@ div.org-content > div.org-row{
 }
 #org-box5 .mod-tab-bd{
 	height:140px;
+}
+#org-box5 h3{
+	height: 20px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 33px;
+	letter-spacing: 2px;
+	color: white;
+	margin-left:5px;
+}
+.org-content .mod-artlist .item .icon{
+	background: url("../images/01-icon.png");
+	width:13px;
+	height:18px;
 }
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/
