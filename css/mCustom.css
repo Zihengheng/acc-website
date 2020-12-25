@@ -194,6 +194,7 @@ li#lgarea a{
 	color:white;
 	float:left;
 	text-align: center;
+	text-decoration:none;
 }
 li#lgarea a:hover{color:#00f4ff;}
 div.top-bar-group button:hover{color:#00f4ff;}
@@ -349,7 +350,7 @@ div#inbox2{
 	margin-left:25px;	
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-top: 10px;
+	margin-top: 6px;
 }
 div#inbox3{
 	padding-top:19px;
@@ -359,6 +360,7 @@ div#inbox3{
 	margin-right: 15px;
 	padding-left: 10px;
 	padding-right: 15px;
+	margin-top: -5px;
 }
 .description{
 	position:relative;
@@ -550,6 +552,9 @@ div#rsk-body{
 	background: url("../images/01-icon.png");
 	width:13px;
 	height:18px;
+}
+#rsk-body .mod-artlist-field1 .date {
+	top:4px;
 }
 /* end of content layout */
 /******* end of 风控管理 section **********/
@@ -915,12 +920,13 @@ div.org-content > div.org-row{
 	background:url("../images/41-org.png") no-repeat;
 	height:300px;
 	width:847px;
-	margin-left: 10px;
+	margin-left: 8px;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 35px;
+	padding-top: 33px;
 	border:0;
 	float:right;
+	margin-top: -5px;
 }
 /*nav list set up*/
 .org-content ul.mod-artlist-field1{

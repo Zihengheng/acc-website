@@ -1881,7 +1881,7 @@ a:focus {
 
 .mod-artlist-field1 .date {
     position: absolute;
-    top: 0;
+    top: 1px;
     right: 10px;
     width: 90px;
     overflow: hidden;
