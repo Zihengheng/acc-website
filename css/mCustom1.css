@@ -29,62 +29,6 @@ div.b{
 }
 
 /****列表显示***/
-table.list-tb{
-	width:342px;
-	table-layout: fixed;
-	font-family: MicrosoftYaHei;
-	font-size: 14px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 30px;
-	letter-spacing: 1px;
-	color: #333333;
-}
-table.list-tb td a{
-	width:220px;
-	text-align: left;
-	overflow: hidden;
-	font-size: 14px;
-	color:#333333;
-	text-decoration: none;
-	padding-right:25px;
-}
-table.list-tb td.words{
-	word-break: keep-all;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-table.list-tb td.date{
-	width:100px;
-}
-table.list-tb td.gap{
-	width:22px;
-}
-ul.bullet-points{
-	width: 364px;
-	height: 113px;
-}
-ul.bullet-points li img{
-	width:14px;
-	height:18px;
-	margin-right: 10px;
-}
-ul.bullet-points li span{
-	font-family: MicrosoftYaHei;
-	font-size: 14px;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 1px;
-	color: #fefefe;
-	line-height: 33px;
-}
-ul.bullet-points li {
-	text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 364px;
-}
 /****section title***/
 div.section-title{
 	width:300px;
@@ -970,6 +914,37 @@ div.org-content > div.org-row{
 .org-content ul.mod-artlist-field1 li.tit{
 	margin-bottom: 10px;
 	font-weight: bold;
+}
+#org-box5 .mob-tab-head{
+	width:500px;
+	height:30px;
+}
+#org-box5 .mob-tab-head li{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33px;
+	letter-spacing: 2px;
+}
+#org-box5  ul.mod-artlist-field1{
+	height:135px;
+	width:700px;
+}
+#org-box5  ul.mod-artlist-field1 li{
+	display:block;
+	width:321px;
+	float:left;
+	margin-right: 20px;
+	margin-left: -20px;
+}
+#org-box5  ul.mod-artlist-field1 .item-more{
+	position:relative;
+	left:400px;
+	top:-35px;
+}
+#org-box5 .mod-tab-bd{
+	height:140px;
 }
 /******* end o f组织管理 section **********/
 /******* 财会书院 section **********/

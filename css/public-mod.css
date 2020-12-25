@@ -2367,7 +2367,8 @@ a:focus {
     overflow: hidden;
     padding-left: 10px;
     padding-top: 10px;
-    color: #656565;
+  /*  color: #656565;*/
+  color:white;
 }
 
 .mod-artlist-tab-default .mod-tab-head li {
@@ -2375,16 +2376,16 @@ a:focus {
     height: 20px;
     line-height: 20px;
     margin-left: 10px;
-    margin-bottom: 2px;
+    margin-bottom:0px;
     cursor: pointer;
     padding: 0 0 0 5px;
     text-indent: 3px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    font-family: "宋体", simsun, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    /*font-family: "宋体", simsun, Arial, Helvetica, sans-serif;
+    font-size: 12px;*/
     white-space: nowrap;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .mod-artlist-tab-default .mod-tab-head li:after {
@@ -2401,7 +2402,7 @@ a:focus {
     background-image: url(../images/bg-tabhead-sprite.png);
     background-position: 100% -55px;
     background-repeat: no-repeat;
-    background-color: #fff;
+   /* background-color: #fff;*/
 }
 
 .mod-artlist-tab-default .mod-tab-head li:first-child {

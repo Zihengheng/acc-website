@@ -617,15 +617,7 @@ div#rsk-body{
 	padding-left: 22px;
 	padding-right: 20%;
 }
-div.rsk-left{
-	width:40%;
-	display:inline-block;
-}
-div.rsk-right{
-	width:40%;
-	display:inline-block;
-	margin-left: 25px;
-}
+
 div.rsk-right > ul > li{
 	line-height: 33px;
 	color:white;
