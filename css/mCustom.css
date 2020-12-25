@@ -282,7 +282,7 @@ div.bottom-menu > div > ul > li:active{
 #header-nav > div > div.bottom-menu > div > ul > li > a{
 	color:white;
 	font-size:18px;
-	margin-top: -4px;
+	margin-top: -3px;
 	text-align: center;
 }
 #header-nav > div > div.bottom-menu > div > ul > li > a:hover{
@@ -401,6 +401,10 @@ div#inbox3{
 	color: #333333;
 	margin:0;
 	width:90px;
+	height:40px;
+}
+.ins-content .mod-tab-head li.cur{
+	border-bottom: 2px solid;G
 }
 /*** end of 新闻栏部分 ***/
 
@@ -998,46 +1002,11 @@ div.book-subtitle{
 }
 /* show book */
 #show-book{
-	padding-top:40px;
+	width:1100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px
 }
-#show-book> img.go-left1,img.go-left2,
-img.go-left3,img.go-right1,img.go-right2, img.go-right3,{
-	margin-top: 30px;
-}
-div.books > ul > li{
-	width:162px;
-	float:left;
-	text-align: center;
-}
-div.books ul{
-	margin-left:25px;
-}
-div.books{
-	width:1036px;
-	top:-30px;
-	position:relative;
-	margin:0 auto;
-	height:200px;
-	overflow:hidden;
-}
-/*btns*/
-img.pull-left.btn.go-left1{
-	margin-left: 29px;
-}
-img.pull-right.btn.go-right1{
-	margin-right:29px;
-}
-img.pull-left.btn.go-left2{
-	margin-left: 29px;
-}
-img.pull-right.btn.go-right2{
-	margin-right:29px;
-}
-img.pull-left.btn.go-left3{
-	margin-left: 29px;
-}
-img.pull-right.btn.go-right3{
-	margin-right:29px;
-}
+
 
 /******* end of 财会书院 section **********/
