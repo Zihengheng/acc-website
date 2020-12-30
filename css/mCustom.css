@@ -1097,15 +1097,10 @@ div.book-subtitle{
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#show-book move{
-	position:absolute;
-	top:40px;
-}
-#show-book a.move{
-	margin-top: 30px;
-}
-#show-book .tab-pane{
-	margin-top: 20px;
+span.btn.btn-l{
+	width:25px;
+	height:78px;
+	background: url("../images/left.png" no-repeat);
 }
 
 /******* end of 财会书院 section **********/
