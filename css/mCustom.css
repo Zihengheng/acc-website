@@ -1,3 +1,28 @@
+/*=== 更改轮播图 ===*/
+
+.carousel-indicators{
+	top:230px;
+}
+.carousel-indicators li{
+	border:1px solid #333333;
+}
+.carousel-indicators .active{
+	/*background-color:;*/
+}
+.car-des{
+	position:relative;
+	top:10px;
+	padding-left: 10px;
+	opacity:0.7;
+	width:100%;
+	text-align: center;
+}
+.car-des span{
+	color:#333333;
+}
+.carousel-inner{
+	height:350px;
+}
 /**通用***/
 body{
 	font-size: 16px;
@@ -370,11 +395,10 @@ div#inbox3{
 }
 #show-img{
 	width:349px;
-	margin-top: 40px;
+	margin-top: 50px;
 }
 #industry > div > div.section-title.ins-title{
 	position:relative;
-	left:-36px;
 }
 #inbox2-tab > li> a{
 	color:#333333;
@@ -546,7 +570,10 @@ div#rsk-body{
 }
 
 #rsk-body li.tit{
-	visibility: hidden;
+	/*visibility: hidden;*/
+}
+#rsk-body li.tit span{
+	visibility:hidden;
 }
 #rsk-body .mod-artlist .item .icon{
 	background: url("../images/01-icon.png");
@@ -1064,11 +1091,21 @@ div.book-subtitle{
 }
 /* show book */
 #show-book{
-	width:1100px;
+	width:1200px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -10px
+	padding-left: 15px;
+	padding-right: 15px;
 }
-
+#show-book move{
+	position:absolute;
+	top:40px;
+}
+#show-book a.move{
+	margin-top: 30px;
+}
+#show-book .tab-pane{
+	margin-top: 20px;
+}
 
 /******* end of 财会书院 section **********/

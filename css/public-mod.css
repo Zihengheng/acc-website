@@ -725,11 +725,14 @@ a:focus {
 }
 
 .mod-imglist-inner img {
-    max-width: 100%;
+    max-width: 120%;
     background: #e4e4e4;
     display: inline-block;
     *display: inline;
     *zoom: 1;
+}
+a.imglist-img img{
+    width:150px;
 }
 
 .i-imgs {
