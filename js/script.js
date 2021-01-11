@@ -10,7 +10,12 @@ $( document ).ready(function() {
 });
 
 $(function(){
+    //测试隐藏按钮
+    $("#navbtn-2").click(function(){
+        $(this).toggleClass("hide");
+    });
 
+    // $("navbtn-2").toggleClass("hide");
     // $.tab(".section-org", ".org-tab li", "cur", ".hot-con", "active", "mousedown");
 
     //轮播
