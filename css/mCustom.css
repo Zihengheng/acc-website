@@ -1,4 +1,4 @@
-
+/*更改热点词汇高亮显示*/
 /*=== 更改登陆样式 ===*/
 #showuser{
 	color:white;
@@ -800,38 +800,39 @@ div.map-words a{
 	margin-top: 30px;
 	text-decoration: none;
 }
-/****单词布局效果****/
-div#mw1 a{
+div.map-words{
 	position:relative;
+}
+div.map-words .words:hover{
+	transform: scale(1.05);
+}
+div.map-words .words a{
+	color:#2659c2;
+}
+/****单词布局效果****/
+div#mw1{
+	position:absolute;
 	top:150px;
 	left:212px;
-	width: 108px;
+	width: 115px;
 	height: 26px;
 	font-family: STXihei;
 	font-size: 27px;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 0px;
-	color: #2659c2;
 }
-div#mw2 a{
-	position:relative;
-	top:250px;
-	left:90px;
+div#mw2{
+    position:absolute;
+	top:270px;
+	left:92px;
 	width: 52px;
 	height: 25px;
 	font-family: STXihei;
 	font-size: 33px;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 0px;
-	color: #2659c2;
 }
-div#mw3 a{
-	position:relative;
-	top:250px;
+div#mw3{
+	position:absolute;
+	top:380px;
 	left:312px;
-	width: 146px;
+	width: 153px;
 	height: 36px;
 	font-family: MicrosoftYaHei;
 	font-size: 36px;
@@ -839,12 +840,11 @@ div#mw3 a{
 	font-stretch: normal;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #4068c6;
 }
-div#mw4 a{
-	position:relative;
-	top:70px;
-	left:400px;
+div#mw4{
+	position:absolute;
+	top:217px;
+	left:410px;
 	width: 210px;
 	height: 41px;
 	font-family: MicrosoftYaHei;
@@ -853,12 +853,11 @@ div#mw4 a{
 	font-stretch: normal;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #4068c6;
 }
-div#mw5 a{
-	position:relative;
-	top:-50px;
-	left:600px;
+div#mw5{
+    position:absolute;
+	top:390px;
+	left:669px;
 	width: 108px;
 	height: 27px;
 	font-family: STXihei;
@@ -866,13 +865,12 @@ div#mw5 a{
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 0px;
-	color: #2659c2;
 }
-div#mw6 a{
-	position:relative;
+div#mw6{
+	position:absolute;
 	top:150px;
 	left:600px;
-	width: 134px;
+	width: 140px;
 	height: 33px;
 	font-family: MicrosoftYaHei;
 	font-size: 33px;
@@ -880,13 +878,12 @@ div#mw6 a{
 	font-stretch: normal;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #4068c6;
 }
-div#mw7 a{
-	position:relative;
-	top:-180px;
+div#mw7{
+	position:absolute;
+	top:64px;
 	left:800px;
-	width: 134px;
+	width: 140px;
 	height: 33px;
 	font-family: MicrosoftYaHei;
 	font-size: 33px;
@@ -894,12 +891,24 @@ div#mw7 a{
 	font-stretch: normal;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #2659c2;
 }
-div#mw8 a{
-	position:relative;
-	top:-100px;
+div#mw8{
+	position:absolute;
+	top:332px;
 	left:980px;
+	width: 161px;
+	height: 32px;
+	font-family: MicrosoftYaHei;
+	font-size: 33px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 1px;
+}
+div#mw9{
+	position:absolute;
+	top:262px;
+	left:808px;
 	width: 135px;
 	height: 32px;
 	font-family: MicrosoftYaHei;
@@ -908,34 +917,18 @@ div#mw8 a{
 	font-stretch: normal;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #2659c2;
 }
-div#mw9 a{
-	position:relative;
-	top:-50px;
-	left:820px;
-	width: 135px;
-	height: 32px;
-	font-family: MicrosoftYaHei;
-	font-size: 33px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 50px;
-	letter-spacing: 1px;
-	color: #2659c2;
-}
-div#mw10 a{
-	position:relative;
-	top:-50px;
-	left:1050px;
-	width: 76px;
+div#mw10{
+	position:absolute;
+	top:147px;
+	left:996px;
+	width: 154px;
 	height: 28px;
 	font-family: STXihei;
 	font-size: 37px;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 0px;
-	color: #2659c2;
 }
 /******* end of 热点词汇 section **********/
 /******* 行业交流 section **********/

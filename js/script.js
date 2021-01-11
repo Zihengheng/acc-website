@@ -10,11 +10,6 @@ $( document ).ready(function() {
 });
 
 $(function(){
-    //测试隐藏按钮
-    $("#navbtn-2").click(function(){
-        $(this).toggleClass("hide");
-    });
-
     // $("navbtn-2").toggleClass("hide");
     // $.tab(".section-org", ".org-tab li", "cur", ".hot-con", "active", "mousedown");
 
@@ -39,6 +34,16 @@ $(function(){
     $("img.go-left3").click(function () { videoScroll2.prev(); });
     $("img.go-right3").click(function () { videoScroll2.next(); });
     videoScroll2.tabmarq(0, 0, 1);
+
+
+    //检索框事件
+    $("#keylist li").click(function(){
+        var newHint = $(this).text();
+        console.log(newHint);
+        $("#label1").html("按"+ newHint + "检索");
+        // $("#searchtext1").attr("placeholder", "按"+newHint+"检索");
+        // $(".sec .pholder").text(newHint);s
+    });
 
 
 });
