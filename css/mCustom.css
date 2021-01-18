@@ -218,10 +218,9 @@ div.section-title img{
 div.section-title span{
 	width: 146px;
 	height: 35px;
-	font-family: MicrosoftYaHei-Bold;
+	font-family: Microsoft YaHei;
 	font-size: 36px;
-	font-weight: normal;
-	font-stretch: normal;
+	font-weight: bold;
 	line-height: 33px;
 	letter-spacing: 4px;
 	color: #333333;
