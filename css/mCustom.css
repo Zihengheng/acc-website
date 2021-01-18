@@ -1,12 +1,16 @@
 /*更改热点词汇高亮显示*/
 /*=== 更改登陆样式 ===*/
-#showuser{
+li#lgarea{
+	width:265px;
+}
+li#lgarea #trail{
+	width:80px;
+}
+span#showuser{
 	color:white;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-.hide{
-	display: none;
-}
-
 /*=== 更改轮播图 ===*/
 
 .carousel-indicators{
@@ -320,22 +324,22 @@ div.top-bar-group{
 div.top-bar-group{
 	float:right;
 }
-div.top-bar-group button{
+div.top-bar-group a{
+	display:inline-block;
 	width:85px;
 	margin-right: 5px;
 	border:0;
 	color:white;
 	height:30px;
 	font-size: 14px;
-	background-image: linear-gradient(
-		#168bf2, 
-		#168bf2), 
-	linear-gradient(
-		#1c1e39, 
-		#1c1e39);
-	background-blend-mode: normal, 
-		normal;
+	background-color:#168bf2; 
 	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	line-height:30px;
+}
+div.top-bar-group a:hover{
+	color:#00f4ff;
 }
 li#lgarea a{
 	display:inline-block;
@@ -959,71 +963,8 @@ table#com-layout #com-box{
 	margin-left:0;
 	margin-right:0;
 	width:121px;
-	background: linear-gradient(
-        to bottom,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      left top no-repeat,
-    linear-gradient(
-        to right,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      left top no-repeat,
-    linear-gradient(
-        to bottom,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      right top no-repeat,
-    linear-gradient(
-        to left,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      right top no-repeat,
-    linear-gradient(
-        to top,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      left bottom no-repeat,
-    linear-gradient(
-        to right,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      left bottom no-repeat,
-    linear-gradient(
-        to top,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      right bottom no-repeat,
-    linear-gradient(
-        to left,
-        grey 0px,
-        grey 2px,
-        transparent 3px,
-        transparent 100%
-      )
-      right bottom no-repeat;
-  background-size: 30px 30px;
+	background: url("../images/bg-combox.png") no-repeat;
+	background-size: 121px 121px;
 }
 div#com-box{
 	position:relative;

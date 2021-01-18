@@ -10,6 +10,8 @@ $( document ).ready(function() {
 });
 
 $(function(){
+    //ie 9 remove fade&&after
+    
     // $("navbtn-2").toggleClass("hide");
     // $.tab(".section-org", ".org-tab li", "cur", ".hot-con", "active", "mousedown");
 
